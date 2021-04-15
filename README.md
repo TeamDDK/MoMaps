@@ -25,30 +25,39 @@
 
 **Required Must-have Stories**
 
-*Login / sign up for user 
-*Ask for permission for user’s location to automate gps tracking
-*Provide a general map according to the user’s location 
-*Implement a tab bar with favorite sites, plan to visit sites and add
-*Implement a search bar for any address 
-*Implement a “go” button to navigate
-*highlight the best possible route to your friend’s location
+* Login/ sign up
+* Ask for permission for user’s location to automate gps tracking
+* Provide a general map according to the user’s location 
+* Implement a tab bar with favorite sites, plan to visit sites and add
+* Implement a search bar for any address 
+* Implement a “go” button to navigate
+* highlight the best possible route to your friend’s location
 
 **Optional Nice-to-have Stories**
 
-*Real time traffic conditions
-*Should show surrounding locations 
-*Be able to manipulate map
-*Dark mode/ light mode 
+* Real time traffic conditions
+* Should show surrounding locations 
+* Be able to manipulate map
+* Dark mode/ light mode 
 
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
-   * ...
-* [list second screen here]
-   * [list associated required story here]
-   * ...
+* [Login]
+   * User is prompted to input username and password
+   * Login if password is correct, unable login is password is wrong
+   * button for sign up leads to sign up screen 
+* [Sign up]
+   * User is prompted to input username and password
+   * sign up button to sign up 
+   * pop up confirmation
+* [Home]
+   * General map of user's current location 
+   * Tab bar is available to add new location, favorite locations and locations to visit 
+   * search bar is available to search any address to navigate
+* [favorites]
+* [Add]
+* [Places to visit ]
 
 ### 3. Navigation
 
