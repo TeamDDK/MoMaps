@@ -65,8 +65,8 @@ This application allows the user to navigate to any location. You can save favor
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
+* Search
+* Places to visit
 * [fill out your third tab]
 
 **Flow Navigation** (Screen to Screen)
