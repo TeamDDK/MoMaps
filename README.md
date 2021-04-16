@@ -67,16 +67,20 @@ This application allows the user to navigate to any location. You can save favor
 
 * Search
 * Places to visit
-* [fill out your third tab]
+* Favorites
+* Add Favorites
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+*Login in -> signup if account is not created
+*Search Tab-> search address -> map will zoom into that location 
+   *step-by-step navigation feature will be enabled -> ability to add that location to favorites
+*Places Tab -> scroll through the places user wants to visit 
+   *click on a place and navigate to that place through the step-by-step navigation feature
+*Favorites Tab -> scroll through the places user has favorited 
+   *click on a place and navigate to that place through the step-by-step navigation feature
+*Add Favorites Tab -> users will add places for future visits or any favorite places they’ve visited already.
+
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
