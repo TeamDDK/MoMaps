@@ -83,7 +83,7 @@ This application allows the user to navigate to any location. You can save favor
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-
+![](https://i.imgur.com/6GhVKOF.jpg)
 ### [BONUS] Interactive Prototype
 
 ## Schema 
