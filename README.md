@@ -83,8 +83,7 @@ This application allows the user to navigate to any location. You can save favor
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![](https://i.imgur.com/ycQfqfH.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
 ![](https://i.imgur.com/6GhVKOF.jpg)
