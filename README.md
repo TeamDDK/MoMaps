@@ -1,4 +1,4 @@
-# MoMaps
+# Name of Application: MoMaps
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -11,7 +11,7 @@
 This application allows the user to navigate to any location. You can save favorite locations and future locations to visit. User is able to incorporate saved location into navigation mode.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
+
 - **Category:** GPS/ City Navigation
 - **Mobile:** This app would be developed primarily for mobile - as the step-by-step navigation feature of the app would require the user to navigate through their city using their phone to get to their favorite spots!
 - **Story:** Allow users to save future locations they want to visit and add favorites to the locations they’ve already visited. To make ease of access - once a favorite spot is added, the imbedded step-by-step navigation feature will allow users to directly get to that location with the latest traffic information.
@@ -25,42 +25,39 @@ This application allows the user to navigate to any location. You can save favor
 
 **Required Must-have Stories**
 
-* Login/ sign up
+* Login/ sign up for user
 * Ask for permission for user’s location to automate gps tracking
-* Provide a general map according to the user’s location 
-* Implement a tab bar with favorite sites, plan to visit sites and add
+* Provide a general map according to the user’s location on home page 
+* Implement a tab bar with 4 categories: search for new location, user's favorite sites, user's plan to visit sites and save new location.
 * Implement a search bar for any address 
 * Implement a “go” button to navigate
-* highlight the best possible route to your friend’s location
+* highlight the best possible route to your location
 
 **Optional Nice-to-have Stories**
 
 * Real time traffic conditions
-* Should show surrounding locations 
-* Be able to manipulate map
+* Should show surrounding well known locations in map  
+* Be able to manipulate map with gestures
 * Dark mode/ light mode 
 
 
 ### 2. Screen Archetypes
 
-* Login
+* Login/ sign up
    * User is prompted to input username and password
-   * Login if password is correct, unable login is password is wrong
-   * button for sign up leads to sign up screen 
-* Sign up
-   * User is prompted to input username and password
-   * sign up button to sign up 
-   * pop up confirmation
+   * Login if password is correct, unable login if password is wrong
+   * button for sign up, signs the user to the password chosen 
+
 * Home
    * General map of user's current location 
    * Tab bar is available to add new location, favorite locations and locations to visit 
    * search bar is available to search any address to navigate
 * favorites
-   * List of your favorite locations 
+   * List of your favorite locations with associated name, description and address  
 * Add
-   * User is able to add a location and save it's name. This location can be a location to visit or favorite
+   * User is able to add a location and save it's name, description and address. This location can be a location inside plan to visit tab or favorite location tab.
 * Places to visit 
-   * List of your locations you plan to visit 
+   * List of your locations you plan to visit with  associated name, description and address 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
