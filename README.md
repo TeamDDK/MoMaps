@@ -1,4 +1,4 @@
-# Name of Application: MoMaps
+# MoMaps
 
 ## Table of Contents
 1. [Overview](#Overview)
