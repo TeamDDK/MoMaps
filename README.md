@@ -88,7 +88,7 @@ This application allows the user to navigate to any location. You can save favor
 
 ## Schema 
 
-####Users:
+#### Users:
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
