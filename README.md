@@ -115,6 +115,118 @@ This application allows the user to navigate to any location. You can save favor
  
  
 ### Networking
+#### Lists of Network Requests by Screen
+  - Login Screen
+    - (Read/Get) users can login to their account
+```swift
+PFUser.logInWithUsername(inBackground:"myname", password:"mypass") {
+  (user: PFUser?, error: Error?) -> Void in
+  if user != nil {
+    // Do stuff after successful login.
+  } else {
+    // The login failed. Check error to see why.
+  }
+}
+
+```
+
+
+  - (Create) Users can sign up for an account
+```swift
+func myMethod() {
+  var user = PFUser()
+  user.username = "myUsername"
+  user.password = "myPassword"
+  user.email = "email@example.com"
+  // other fields can be set just like with PFObject
+  user["phone"] = "415-392-0202"
+
+  user.signUpInBackground {
+    (succeeded: Bool, error: Error?) -> Void in
+    if let error = error {
+      let errorString = error.localizedDescription
+      // Show the errorString somewhere and let the user try again.
+    } else {
+      // Hooray! Let them use the app now.
+    }
+  }
+}
+
+```
+
+
+
+
+  - Favorites 
+    - (Read/Get) Query all saved locations of the user
+```swift
+let query = PFQuery(className:"GameScore")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (gameScore, error) in
+    if error == nil {
+       	 let score = gameScore["score"] as? Int
+let playerName = gameScore["playerName"] as? String
+let cheatMode = gameScore["cheatMode"] as? Bool
+
+    } else {
+        // Fail!
+    }
+}
+```
+
+   - (Delete) Users can delete a saved location 
+```swift
+PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+    if (succeeded) {
+        // The array of objects was successfully deleted.
+    } else {
+        // There was an error. Check the errors localizedDescription.
+    }
+}
+```
+
+
+  - Plan to visit screen
+    - (Read/Get) Query all saved locations of the use
+```swift
+let query = PFQuery(className:"GameScore")
+query.getObjectInBackground(withId: "xWMyZEGZ") { (gameScore, error) in
+    if error == nil {
+       	 let score = gameScore["score"] as? Int
+let playerName = gameScore["playerName"] as? String
+let cheatMode = gameScore["cheatMode"] as? Bool
+
+    } else {
+        // Fail!
+    }
+}
+
+(Delete) Users can delete a saved location 
+	```swift
+PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
+    if (succeeded) {
+        // The array of objects was successfully deleted.
+    } else {
+        // There was an error. Check the errors localizedDescription.
+    }
+}
+```
+
+  - Add screen
+    - (Create) Create a new location to be saved as either planned or favorites
+```swift
+let gameScore = PFObject(className:"GameScore")
+gameScore["score"] = 1337
+gameScore["playerName"] = "Sean Plott"
+gameScore["cheatMode"] = false
+gameScore.saveInBackground { (succeeded, error)  in
+    if (succeeded) {
+        // The object has been saved.
+    } else {
+        // There was a problem, check error.description
+    }
+}
+```
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
