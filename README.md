@@ -103,6 +103,7 @@ This application allows the user to navigate to any location. You can save favor
    | coordinates      | pair<float,float>   |  Pair of longitude and latitude float numbers|
    | Favorite/Plan    | Char   |  If the location contains an “F” its a favorite, if it contains a “P” its planned to visit|
    | Description | string | Users can add a description to the specific location |
+    |name| string| user's name of the location|
    
 #### Map Object:
 
