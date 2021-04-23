@@ -87,7 +87,7 @@ This application allows the user to navigate to any location. You can save favor
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-
+### Models
 #### Users:
 
    | Property      | Type     | Description |
@@ -113,8 +113,6 @@ This application allows the user to navigate to any location. You can save favor
 
  
   
-
-### Models
 [Add table of models]
 ### Networking
 - [Add list of network requests by screen ]
