@@ -173,6 +173,7 @@ let cheatMode = gameScore["cheatMode"] as? Bool
 }
 ```
 
+-
    - (Delete) Users can delete a saved location 
 ```swift
 PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
@@ -199,9 +200,11 @@ let cheatMode = gameScore["cheatMode"] as? Bool
         // Fail!
     }
 }
+```
 
-(Delete) Users can delete a saved location 
-	```swift
+ 
+- - (Delete) Users can delete a saved location 
+ ```swift
 PFObject.deleteAll(inBackground: objectArray) { (succeeded, error) in
     if (succeeded) {
         // The array of objects was successfully deleted.
