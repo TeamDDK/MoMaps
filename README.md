@@ -95,6 +95,14 @@ This application allows the user to navigate to any location. You can save favor
    | username      | String   |  The name the user picks for their account |
    | password      | String   |  The password linked to specific username|
    | location_list | array of location object | List of location coordinates inside an array of dictionaries |
+ 
+#### Location Object(where we store locations saved by users):
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | coordinates      | pair<float,float>   |  Pair of longitude and latitude float numbers|
+   | Favorite/Plan    | Char   |  If the location contains an “F” its a favorite, if it contains a “P” its planned to visit|
+   | Description | string | Users can add a description to the specific location |
   
 
 ### Models
