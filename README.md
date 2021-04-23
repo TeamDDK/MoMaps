@@ -87,7 +87,16 @@ This application allows the user to navigate to any location. You can save favor
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
+
+####Users:
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | username      | String   |  The name the user picks for their account |
+   | password      | String   |  The password linked to specific username|
+   | location_list | array of location object | List of location coordinates inside an array of dictionaries |
+  
+
 ### Models
 [Add table of models]
 ### Networking
