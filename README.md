@@ -112,8 +112,7 @@ This application allows the user to navigate to any location. You can save favor
    | user_pin      | pair<float, float>   |  Pin is dropped at user’s current location |
 
  
-  
-[Add table of models]
+ 
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
