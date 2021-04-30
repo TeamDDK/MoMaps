@@ -25,7 +25,7 @@ This application allows the user to navigate to any location. You can save favor
 
 **Required Must-have Stories**
 
-* Login/ sign up for user
+[x] Login/ sign up for user
 * Ask for permission for user’s location to automate gps tracking
 * Provide a general map according to the user’s location on home page 
 * Implement a tab bar with 4 categories: search for new location, user's favorite sites, user's plan to visit sites and save new location.
