@@ -51,7 +51,7 @@ annotations and user pin
 
 map scroll and zoom in
 
-![](https://i.imgur.com/9KnvCjH.gif)
+![](https://github.com/TeamDDK/MoMaps/blob/6009805fb09f1d8cfc27c057cdb50d2c5967eddb/gifs/map%20show%20off.gif)
 
 
 ### 2. Screen Archetypes
