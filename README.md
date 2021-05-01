@@ -43,7 +43,7 @@ This application allows the user to navigate to any location. You can save favor
 ### 1.5 Gifs
  login
  
-![](https://i.imgur.com/8z7dgGL.gif)
+![](https://github.com/TeamDDK/MoMaps/blob/2c68083c63e7fd43c7aa08339ba645f62f9e8435/gifs/login.gif)
 
 annotations and user pin
 
