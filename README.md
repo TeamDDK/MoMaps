@@ -44,6 +44,23 @@ This application allows the user to navigate to any location. You can save favor
 - [ ] Be able to manipulate map with gestures
 - [ ]  Dark mode/ light mode 
 
+### 1.5 Gifs
+login and animations
+
+![](https://i.imgur.com/DEGRQN5.gif)
+
+annotations
+
+![](https://i.imgur.com/H0sdKHB.gif)
+
+
+map scroll and zoom, saved settings when app is closed
+
+![](https://i.imgur.com/TaiEIDu.gif)
+
+
+
+
 
 ### 2. Screen Archetypes
 
