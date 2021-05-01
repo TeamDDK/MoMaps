@@ -47,16 +47,16 @@ This application allows the user to navigate to any location. You can save favor
 ### 1.5 Gifs
 login and animations
 
-![](https://i.imgur.com/DEGRQN5.gif)
+![](https://github.com/TeamDDK/MoMaps/blob/9c49e246e782a9fb86cb423bb4eea3ddcc9b22bf/gifs/login.gif)
 
 annotations
 
-![](https://i.imgur.com/H0sdKHB.gif)
+![](https://github.com/TeamDDK/MoMaps/blob/9c49e246e782a9fb86cb423bb4eea3ddcc9b22bf/gifs/annotation.gif)
 
 
 map scroll and zoom, saved settings when app is closed
 
-![](https://i.imgur.com/TaiEIDu.gif)
+![](https://github.com/TeamDDK/MoMaps/blob/6009805fb09f1d8cfc27c057cdb50d2c5967eddb/gifs/map%20show%20off.gif)
 
 
 
