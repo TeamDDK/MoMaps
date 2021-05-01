@@ -42,12 +42,15 @@ This application allows the user to navigate to any location. You can save favor
 
 ### 1.5 Gifs
  login
+ 
 ![](https://i.imgur.com/8z7dgGL.gif)
 
 annotations and user pin
+
 ![](https://i.imgur.com/YmP4y98.gif)
 
 map scroll and zoom in
+
 ![](https://i.imgur.com/9KnvCjH.gif)
 
 
