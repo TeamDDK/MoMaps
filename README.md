@@ -25,41 +25,37 @@ This application allows the user to navigate to any location. You can save favor
 
 **Required Must-have Stories**
 
-- [x] User is able to log in 
-- [x] User stays logged in after exiting app 
-- [x] User is able to sign up as a new user 
-- [x] create a tab bar with 4 categories: search for new location, user's favorite sites, user's plan to visit sites and save new location
-- [ ] Ask for permission for user’s location to automate gps tracking
-- [ ] Provide a general map according to the user’s location on home page 
-- [ ] Implement a search bar on home page for any address 
-- [ ] Implement a “go” button to navigate on home screen
-- [ ] when user taps "go" button, navigation to location starts 
-- [ ] highlight the route to selected location
-- [ ] drop pin for location currently at, which updates as user moves
-- [ ] drop pin for location for navigation
+* Login/ sign up for user
+* Ask for permission for user’s location to automate gps tracking
+* Provide a general map according to the user’s location on home page 
+* Implement a tab bar with 4 categories: search for new location, user's favorite sites, user's plan to visit sites and save new location.
+* Implement a search bar for any address 
+* Implement a “go” button to navigate
+* highlight the best possible route to your location
 
 **Optional Nice-to-have Stories**
-- [ ]  Real time traffic conditions
-- [ ] Should show surrounding well known locations in map  
-- [ ] Be able to manipulate map with gestures
-- [ ]  Dark mode/ light mode 
+
+* Real time traffic conditions
+* Should show surrounding well known locations in map  
+* Be able to manipulate map with gestures
+* Dark mode/ light mode 
 
 ### 1.5 Gifs
-login and animations
+register
 
-![](https://github.com/TeamDDK/MoMaps/blob/9c49e246e782a9fb86cb423bb4eea3ddcc9b22bf/gifs/login.gif)
+![](https://github.com/TeamDDK/MoMaps/blob/Dibba/gifs/signup.gif)
 
-annotations
+ login
+ 
+![](https://github.com/TeamDDK/MoMaps/blob/2c68083c63e7fd43c7aa08339ba645f62f9e8435/gifs/login.gif)
 
-![](https://github.com/TeamDDK/MoMaps/blob/9c49e246e782a9fb86cb423bb4eea3ddcc9b22bf/gifs/annotation.gif)
+annotations and user pin
 
+![](https://github.com/TeamDDK/MoMaps/blob/6298046a81bbfa2331c0f8bc8893fc63b17ec35f/gifs/annotation.gif)
 
-map scroll and zoom, saved settings when app is closed
+map scroll and zoom in
 
 ![](https://github.com/TeamDDK/MoMaps/blob/6009805fb09f1d8cfc27c057cdb50d2c5967eddb/gifs/map%20show%20off.gif)
-
-
-
 
 
 ### 2. Screen Archetypes
