@@ -47,7 +47,7 @@ This application allows the user to navigate to any location. You can save favor
 
 annotations and user pin
 
-[https://github.com/TeamDDK/MoMaps/blob/6298046a81bbfa2331c0f8bc8893fc63b17ec35f/gifs/annotation.gif]()
+![https://github.com/TeamDDK/MoMaps/blob/6298046a81bbfa2331c0f8bc8893fc63b17ec35f/gifs/annotation.gif]()
 
 map scroll and zoom in
 
@@ -93,7 +93,7 @@ map scroll and zoom in
 
 
 ## Wireframes
-[https://github.com/TeamDDK/MoMaps/blob/bc4d0476fc816cd909acc463f68357709978d4a3/gifs/login.gif]()
+![](https://i.imgur.com/ycQfqfH.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
 ![](https://i.imgur.com/6GhVKOF.jpg)
