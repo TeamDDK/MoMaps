@@ -93,7 +93,7 @@ map scroll and zoom in
 
 
 ## Wireframes
-![](https://i.imgur.com/ycQfqfH.jpg)
+[https://github.com/TeamDDK/MoMaps/blob/bc4d0476fc816cd909acc463f68357709978d4a3/gifs/login.gif]()
 
 ### [BONUS] Digital Wireframes & Mockups
 ![](https://i.imgur.com/6GhVKOF.jpg)
