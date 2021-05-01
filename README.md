@@ -25,21 +25,24 @@ This application allows the user to navigate to any location. You can save favor
 
 **Required Must-have Stories**
 
-- [x] Login/ sign up for user
-- [x] Implement a tab bar with 4 categories: search for new location, user's favorite sites, user's plan to visit sites and save new location
-- []Ask for permission for user’s location to automate gps tracking
-- []Provide a general map according to the user’s location on home page 
-- [x] Implement a tab bar with 4 categories: search for new location, user's favorite sites, user's plan to visit sites and save new location.
-- []Implement a search bar for any address 
-- []Implement a “go” button to navigate
-- []highlight the best possible route to your location
+- [x] User is able to log in 
+- [x] User stays logged in after exiting app 
+- [x] User is able to sign up as a new user 
+- [x] create a tab bar with 4 categories: search for new location, user's favorite sites, user's plan to visit sites and save new location
+- [ ] Ask for permission for user’s location to automate gps tracking
+- [ ] Provide a general map according to the user’s location on home page 
+- [ ] Implement a search bar on home page for any address 
+- [ ] Implement a “go” button to navigate on home screen
+- [ ] when user taps "go" button, navigation to location starts 
+- [ ] highlight the route to selected location
+- [ ] drop pin for location currently at, which updates as user moves
+- [ ] drop pin for location for navigation
 
 **Optional Nice-to-have Stories**
-
-* Real time traffic conditions
-* Should show surrounding well known locations in map  
-* Be able to manipulate map with gestures
-* Dark mode/ light mode 
+- [ ]  Real time traffic conditions
+- [ ] Should show surrounding well known locations in map  
+- [ ] Be able to manipulate map with gestures
+- [ ]  Dark mode/ light mode 
 
 
 ### 2. Screen Archetypes
