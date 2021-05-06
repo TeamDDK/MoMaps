@@ -32,6 +32,16 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
+		<key>Mapbox-iOS-SDK.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>MapboxMobileEvents.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
 		<key>MarqueeLabel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
