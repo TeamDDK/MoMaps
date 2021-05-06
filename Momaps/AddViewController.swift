@@ -10,17 +10,18 @@ import Parse
 
 class AddViewController: UIViewController {
 
+    
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var descriptionlabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
-    
-    let FaveLocations = PFObject(className: "FaveLocations")
-    let PlanLocations = PFObject(className: "PlanLocations")
 
+    
     @IBAction func addFavoritesButton(_ sender: Any) {
+        let FaveLocations = PFObject(className: "FaveLocations")
         FaveLocations["Name"] = nameTextField.text!
         FaveLocations["Address"] = addressTextField.text!
         FaveLocations["Description"] = descriptionTextField.text!
@@ -34,9 +35,8 @@ class AddViewController: UIViewController {
             }
         }
     }
-    
-    
     @IBAction func addPlansButton(_ sender: Any) {
+        let PlanLocations = PFObject(className: "PlanLocations")
         PlanLocations["Name"] = nameTextField.text!
         PlanLocations["Address"] = addressTextField.text!
         PlanLocations["Description"] = descriptionTextField.text!
@@ -54,7 +54,6 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         nameTextField.layer.cornerRadius = 10.0
         nameTextField.layer.borderWidth = 2.0
         nameTextField.layer.borderColor = UIColor.black.cgColor
