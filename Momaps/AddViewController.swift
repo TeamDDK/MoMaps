@@ -8,12 +8,26 @@
 import UIKit
 
 class AddViewController: UIViewController {
-
+    @IBOutlet weak var slider: UISegmentedControl!
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    
+    @IBOutlet weak var descriptionlabel: UILabel!
+    
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    
+    @IBOutlet weak var descriptionTextField: UITextField!
+    
+    @IBAction func saveButton(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-        // Do any additional setup after loading the view.
+      
     }
     
 
