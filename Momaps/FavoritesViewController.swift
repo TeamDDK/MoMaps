@@ -6,15 +6,60 @@
 //
 
 import UIKit
+import Parse
 
-class FavoritesViewController: UIViewController {
+class FavoritesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var locations = [PFObject]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        tableView.dataSource = self
+        tableView.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let query = PFQuery(className: "FaveLocations")
+        query.includeKey("User")
+        query.limit = 20
+        
+        query.findObjectsInBackground { locations, error in
+            if locations != nil{
+                self.locations = locations!
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        locations.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FavoritesTableViewCell") as! FavoritesTableViewCell
+        
+        let location = locations[indexPath.row]
+        
+        cell.nameLabel.text = location["Name"] as! String
+        cell.addressLabel.text = location["Address"] as! String
+        cell.descriptionLabel.text = location["Description"] as! String
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            self.locations.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     
 
     /*

@@ -12,6 +12,8 @@
 		862825AB26367AC10088B4A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862825A926367AC10088B4A9 /* Main.storyboard */; };
 		862825AD26367AC30088B4A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862825AC26367AC30088B4A9 /* Assets.xcassets */; };
 		862825B026367AC30088B4A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862825AE26367AC30088B4A9 /* LaunchScreen.storyboard */; };
+		8664D92D26444E13007A08A2 /* PlannerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8664D92C26444E13007A08A2 /* PlannerTableViewCell.swift */; };
+		8664D92F26445F2E007A08A2 /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8664D92E26445F2E007A08A2 /* FavoritesTableViewCell.swift */; };
 		866B6E232638BE2D008637BB /* 46541-nature-visite-travel.json in Resources */ = {isa = PBXBuildFile; fileRef = 866B6E222638BE2D008637BB /* 46541-nature-visite-travel.json */; };
 		866B6E262639E4A8008637BB /* 4159-menu-page-transition.json in Resources */ = {isa = PBXBuildFile; fileRef = 866B6E252639E4A8008637BB /* 4159-menu-page-transition.json */; };
 		866B6E292639EBF0008637BB /* AnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866B6E282639EBEF008637BB /* AnimView.swift */; };
@@ -35,6 +37,8 @@
 		862825AC26367AC30088B4A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		862825AF26367AC30088B4A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		862825B126367AC30088B4A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8664D92C26444E13007A08A2 /* PlannerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerTableViewCell.swift; sourceTree = "<group>"; };
+		8664D92E26445F2E007A08A2 /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		866B6E222638BE2D008637BB /* 46541-nature-visite-travel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "46541-nature-visite-travel.json"; sourceTree = "<group>"; };
 		866B6E252639E4A8008637BB /* 4159-menu-page-transition.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "4159-menu-page-transition.json"; sourceTree = "<group>"; };
 		866B6E282639EBEF008637BB /* AnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				866B6E222638BE2D008637BB /* 46541-nature-visite-travel.json */,
 				866B6E2B2639F3ED008637BB /* 39612-location-animation.json */,
 				866B6E282639EBEF008637BB /* AnimView.swift */,
+				8664D92C26444E13007A08A2 /* PlannerTableViewCell.swift */,
+				8664D92E26445F2E007A08A2 /* FavoritesTableViewCell.swift */,
 			);
 			path = Momaps;
 			sourceTree = "<group>";
@@ -238,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8664D92D26444E13007A08A2 /* PlannerTableViewCell.swift in Sources */,
+				8664D92F26445F2E007A08A2 /* FavoritesTableViewCell.swift in Sources */,
 				86CDA5002637BBED00FCA2B7 /* RoundButton.swift in Sources */,
 				86CDA4EA2637969400FCA2B7 /* LoginViewController.swift in Sources */,
 				862825A426367AC10088B4A9 /* AppDelegate.swift in Sources */,
