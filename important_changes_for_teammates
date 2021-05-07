@@ -2,7 +2,7 @@
 
 2. Basically, The pod file for Navigation is very very big. So in order to push you need to install another git extension: https://git-lfs.github.com/ 
 2a. You have to follow the steps in the order they described on the website. Remember you need to download git lfs and then install it into the repository.
-2b. If you don't know what you need to track: just copy and paste this after navigating to the repository:
+2b. If you don't know what you need to track: just copy and paste this after installing lfs in the repo:
 		 git lfs track Pods/MapboxNavigationNative/MapboxNavigationNative.xcframework/ios-arm64_armv7/MapboxNavigationNative.framework/MapboxNavigationNative
 
 3a. You'll see I commented out some animations, thats because they were very annoying to deal with when implement and debugging the route calculations. You can comment them back in, but I'm leaning towards updating them sometime this week
