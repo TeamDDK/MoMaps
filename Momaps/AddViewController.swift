@@ -66,6 +66,9 @@ class AddViewController: UIViewController {
                 print("Error")
             }
         }
+            nameTextField.text?.removeAll()
+            addressTextField.text?.removeAll()
+            descriptionTextField.text?.removeAll()
     }
 }
     @IBAction func addPlansButton(_ sender: Any) {
@@ -88,6 +91,9 @@ class AddViewController: UIViewController {
             }else{
             }
         }
+            nameTextField.text?.removeAll()
+            addressTextField.text?.removeAll()
+            descriptionTextField.text?.removeAll()
     }
 }
     override func viewDidLoad() {

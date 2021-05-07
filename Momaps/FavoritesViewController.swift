@@ -7,6 +7,7 @@
 
 import UIKit
 import Parse
+import NotificationBannerSwift
 
 class FavoritesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -38,7 +39,13 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        locations.count
+        if locations.count == 0 {
+                self.tableView.setEmptyMessage("Add your favorite locations through the add new screen!")
+            } else {
+                self.tableView.restore()
+            }
+
+            return locations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,8 +62,18 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
+            let object = locations[indexPath.row] as! PFObject
             self.locations.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
+            print(object)
+            object.deleteInBackground { (success, error) in
+                        if (success) {
+                            self.tableView.reloadData()
+                        } else {
+                            let error = error?.localizedDescription as! String
+                            let banner = GrowingNotificationBanner(title: "Whoops we had a problem with the deletion", subtitle: "\(error)", leftView: nil, rightView: nil, style: .danger, colors: nil)
+                        }
+            }
         }
     }
     

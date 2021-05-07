@@ -7,6 +7,28 @@
 
 import UIKit
 import Parse
+import NotificationBannerSwift
+
+extension UITableView {
+
+    func setEmptyMessage(_ message: String) {
+        let messageLabel = UILabel(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
+        messageLabel.text = message
+        messageLabel.textColor = .lightGray
+        messageLabel.numberOfLines = 0
+        messageLabel.textAlignment = .center
+        messageLabel.font = UIFont(name: "TrebuchetMS", size: 30)
+        messageLabel.sizeToFit()
+
+        self.backgroundView = messageLabel
+        self.separatorStyle = .none
+    }
+
+    func restore() {
+        self.backgroundView = nil
+        self.separatorStyle = .singleLine
+    }
+}
 
 class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -32,7 +54,7 @@ class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewD
             if locations != nil{
                 self.locations = locations!
                 self.tableView.reloadData()
-                print(locations)
+                //print(locations)
             }
         }
     }
@@ -40,7 +62,13 @@ class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return locations.count
+        if locations.count == 0 {
+                self.tableView.setEmptyMessage("Add new places you want to visit through the add new screen!")
+            } else {
+                self.tableView.restore()
+            }
+
+            return locations.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,35 +85,19 @@ class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
+            let object = locations[indexPath.row] as! PFObject
             self.locations.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
-            
-            let location = locations[indexPath.row]
-            let id = location["objectId"] as! String
-            let query = PFQuery(className: "PlanLocations")
-            query.getObjectInBackground(withId: "asdfasdf") { (object,error) -> Void in
-                if object != nil && error == nil{
-                    object!.deleteInBackground()
-                    print("Object just deleted!")
-                }else{
-                    print("error")
-                }
-            }
-        
-        /*
-            objectToDelete.deleteInBackground { (success, error) in
+            print(object)
+            object.deleteInBackground { (success, error) in
                         if (success) {
-                            print("It worked")
-                            // Force a reload of the table - fetching fresh data from Parse platform
-                            //self.loadObjects()
+                            self.tableView.reloadData()
                         } else {
-                            // There was a problem, check error.description
+                            let error = error?.localizedDescription as! String
+                            let banner = GrowingNotificationBanner(title: "Whoops we had a problem with the deletion", subtitle: "\(error)", leftView: nil, rightView: nil, style: .danger, colors: nil)
                         }
-
-
+                    }
         }
-            */
-    }
 }
 
     /*
