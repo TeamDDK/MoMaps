@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = MapboxCommon;
+			productName = MapboxCommon;
 		};
 		6746AB6F4D992402B59D1651512EA19E /* Mapbox-iOS-SDK */ = {
 			isa = PBXAggregateTarget;
@@ -27,6 +28,7 @@
 				803020AD004C4B46B029691ED5B6D221 /* PBXTargetDependency */,
 			);
 			name = "Mapbox-iOS-SDK";
+			productName = "Mapbox-iOS-SDK";
 		};
 		EC415FB3D7B47A1F7F5FDFCE947BC6DF /* MapboxAccounts */ = {
 			isa = PBXAggregateTarget;
@@ -37,6 +39,7 @@
 			dependencies = (
 			);
 			name = MapboxAccounts;
+			productName = MapboxAccounts;
 		};
 		F4966F66FDFA518B3F8C8502BD0F7136 /* MapboxNavigationNative */ = {
 			isa = PBXAggregateTarget;
@@ -48,6 +51,7 @@
 				0F5A591FF8ABBF17F9AF50AF105DCA7A /* PBXTargetDependency */,
 			);
 			name = MapboxNavigationNative;
+			productName = MapboxNavigationNative;
 		};
 /* End PBXAggregateTarget section */
 
@@ -1539,9 +1543,9 @@
 		054E310341BC2D6059FEBC7415DD14EA /* PFGeoPoint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFGeoPoint.m; path = Parse/Parse/PFGeoPoint.m; sourceTree = "<group>"; };
 		054E60D2089CCC2F5C7CF0BDECE130FE /* PFPushState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPushState.m; path = Parse/Parse/Internal/Push/State/PFPushState.m; sourceTree = "<group>"; };
 		056A139F7C121F06FD1C796A812DB494 /* PFInstallationConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFInstallationConstants.h; path = Parse/Parse/Internal/Installation/Constants/PFInstallationConstants.h; sourceTree = "<group>"; };
-		05FDD5E1C60652F3DC29A1A2A7F29821 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		05FDD5E1C60652F3DC29A1A2A7F29821 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = ja.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		06355603C373E98F06DE86B8F720FA0F /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = ca.lproj/Navigation.strings; sourceTree = "<group>"; };
-		0652F2476C7C87C6C0F6CB68072EA25F /* Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Parse.framework; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0652F2476C7C87C6C0F6CB68072EA25F /* Parse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Parse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		069246BDCFA92A41695E7FA88991B9AD /* MapboxCoreNavigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxCoreNavigation.release.xcconfig; sourceTree = "<group>"; };
 		069D1247F1B5DBE98E538880A3ED7309 /* PFInternalUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFInternalUtils.m; path = Parse/Parse/Internal/PFInternalUtils.m; sourceTree = "<group>"; };
 		06C8904DD6DF8A82156A4763C4C8D145 /* PFObjectConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObjectConstants.h; path = Parse/Parse/Internal/Object/Constants/PFObjectConstants.h; sourceTree = "<group>"; };
@@ -1565,8 +1569,8 @@
 		09F60C16A0E5C79C1F64D2C28AED9EDA /* Polyline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Polyline.swift; path = Sources/Polyline/Polyline.swift; sourceTree = "<group>"; };
 		0A154D001F0F975CAC3AB320DE467A5E /* LayerImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerImageProvider.swift; path = "lottie-swift/src/Private/LayerContainers/Utility/LayerImageProvider.swift"; sourceTree = "<group>"; };
 		0A58D63340795CE60E1832A3DEEDADA1 /* AnimationSubview.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationSubview.swift; path = "lottie-swift/src/Public/iOS/AnimationSubview.swift"; sourceTree = "<group>"; };
-		0AA98A0403F4D7480DDE5E4E7C0ADFE0 /* MapboxAccounts.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxAccounts.xcframework; sourceTree = "<group>"; };
-		0AB91F46DDDA5588520D012E6F4FB918 /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NotificationBannerSwift.framework; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA98A0403F4D7480DDE5E4E7C0ADFE0 /* MapboxAccounts.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = MapboxAccounts.xcframework; sourceTree = "<group>"; };
+		0AB91F46DDDA5588520D012E6F4FB918 /* NotificationBannerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotificationBannerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2327FB3035C4CBF8C4713CCF56DB0C /* PFCloud+Deprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFCloud+Deprecated.h"; path = "Parse/Parse/PFCloud+Deprecated.h"; sourceTree = "<group>"; };
 		0B75217078FAD7A7F58AFF1B2930AFDC /* PFKeyValueCache_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFKeyValueCache_Private.h; path = Parse/Parse/Internal/KeyValueCache/PFKeyValueCache_Private.h; sourceTree = "<group>"; };
 		0BCC625B73878D8CC53E0AC91E51F66A /* PFProductsRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFProductsRequestHandler.h; path = Parse/Parse/Internal/Product/ProductsRequestHandler/PFProductsRequestHandler.h; sourceTree = "<group>"; };
@@ -1648,7 +1652,7 @@
 		197D9AA6A2EB517A62FF3EA1D577793A /* BulletinBoard-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BulletinBoard-dummy.m"; sourceTree = "<group>"; };
 		1986D071496E31090C268FB6D4DC6178 /* SolidCompositionLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolidCompositionLayer.swift; path = "lottie-swift/src/Private/LayerContainers/CompLayers/SolidCompositionLayer.swift"; sourceTree = "<group>"; };
 		19BDD469D78FE1CC68B429A4B1C39CA0 /* PFProduct.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFProduct.m; path = Parse/Parse/PFProduct.m; sourceTree = "<group>"; };
-		19E9118BE480A7F0F81C75B688C388E2 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		19E9118BE480A7F0F81C75B688C388E2 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = fr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		1A7150E80BE397A6C0DBB23B9D17BE6C /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = it.lproj/Navigation.strings; sourceTree = "<group>"; };
 		1A7410659F58852DC98E799F01934423 /* UIKit+MMEMobileEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIKit+MMEMobileEvents.m"; path = "Sources/MapboxMobileEvents/UIKit+MMEMobileEvents.m"; sourceTree = "<group>"; };
 		1A8F1E144B8510406732101071F14E07 /* MDCMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCMath.h; path = components/private/Math/src/MDCMath.h; sourceTree = "<group>"; };
@@ -1675,7 +1679,7 @@
 		1E401E3F31548B9A50391A30A034E155 /* PFAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAssert.h; path = Parse/Parse/Internal/PFAssert.h; sourceTree = "<group>"; };
 		1E77459B4A9FE71FD3EEF868D33726D7 /* KeyframeInterpolator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyframeInterpolator.swift; path = "lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueProviders/KeyframeInterpolator.swift"; sourceTree = "<group>"; };
 		1EA6FE3F3577809EA19BE18A92EC5675 /* MDCTextControlVerticalPositioningReferenceOutlined.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCTextControlVerticalPositioningReferenceOutlined.h; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlVerticalPositioningReferenceOutlined.h; sourceTree = "<group>"; };
-		1EE3A4D593AA5AC3FDAC17806EB29195 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Polyline.framework; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE3A4D593AA5AC3FDAC17806EB29195 /* Polyline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEE866E84CB5DC33E33FF1771055309 /* BLTNPageItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNPageItem.swift; path = Sources/Models/BLTNPageItem.swift; sourceTree = "<group>"; };
 		1F2595FED9BC4EFFA6AF71581FDA2C22 /* PFApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFApplication.h; path = Parse/Parse/Internal/PFApplication.h; sourceTree = "<group>"; };
 		1F6A6ECB43CC76467D5BFC3AC87F2911 /* PFEventuallyPin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFEventuallyPin.m; path = Parse/Parse/Internal/PFEventuallyPin.m; sourceTree = "<group>"; };
@@ -1697,7 +1701,7 @@
 		21DC3FF5A3AF4E03AB4CB0E600460879 /* PFPaymentTransactionObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPaymentTransactionObserver.h; path = Parse/Parse/Internal/Purchase/PaymentTransactionObserver/PFPaymentTransactionObserver.h; sourceTree = "<group>"; };
 		21EFCDC553BDC393D2DCE04A48892511 /* BulletinBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BulletinBoard.debug.xcconfig; sourceTree = "<group>"; };
 		2216988C3A971802803D88980E9BB379 /* PFRESTObjectBatchCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRESTObjectBatchCommand.h; path = Parse/Parse/Internal/Commands/PFRESTObjectBatchCommand.h; sourceTree = "<group>"; };
-		221F5AC54BB8C71D06C36315383D8C91 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Parse/Parse/Resources/en.lproj; sourceTree = "<group>"; };
+		221F5AC54BB8C71D06C36315383D8C91 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Parse/Parse/Resources/en.lproj; sourceTree = "<group>"; };
 		2248A6FBAD76E8C84DF51DA5FC8620C8 /* LayerTextProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayerTextProvider.swift; path = "lottie-swift/src/Private/LayerContainers/Utility/LayerTextProvider.swift"; sourceTree = "<group>"; };
 		2281D642ED94A18DC9803FC73FD00FBF /* PFUserAuthenticationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUserAuthenticationDelegate.h; path = Parse/Parse/PFUserAuthenticationDelegate.h; sourceTree = "<group>"; };
 		22EBE3DF257365DD2B9F88C9C7F81C01 /* Parse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Parse.release.xcconfig; sourceTree = "<group>"; };
@@ -1730,7 +1734,7 @@
 		290573EEF56A007BF37FF426C71A3C64 /* PFObjectUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFObjectUtilities.m; path = Parse/Parse/Internal/Object/Utilities/PFObjectUtilities.m; sourceTree = "<group>"; };
 		292DEBB3F3402A9E0303FD9BEE0D6461 /* InstructionsCardView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstructionsCardView.swift; path = Sources/MapboxNavigation/InstructionsCardView.swift; sourceTree = "<group>"; };
 		2946DBB2C57B84E47CA41AB1E000D9C3 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Sources/MapboxNavigation/Cache.swift; sourceTree = "<group>"; };
-		2A0800E9D2B5FAF320B5B5AE8559DBB5 /* MapboxCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxCommon.xcframework; sourceTree = "<group>"; };
+		2A0800E9D2B5FAF320B5B5AE8559DBB5 /* MapboxCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = MapboxCommon.xcframework; sourceTree = "<group>"; };
 		2A0AE4254B1A2E2279D8431F8DA246E7 /* PFPushPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPushPrivate.h; path = Parse/Parse/Internal/Push/PFPushPrivate.h; sourceTree = "<group>"; };
 		2A6412A4ED7969903372F1C4A799B2C9 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		2A6D313800B0C30D5F84E575765C5E8A /* MGLMapView+MGLNavigationAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MGLMapView+MGLNavigationAdditions.m"; path = "Sources/MapboxNavigation/MGLMapView+MGLNavigationAdditions.m"; sourceTree = "<group>"; };
@@ -1774,7 +1778,7 @@
 		31CBE8DCBA4FBB7ABD5AE79890051FA7 /* PFProductsRequestHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFProductsRequestHandler.m; path = Parse/Parse/Internal/Product/ProductsRequestHandler/PFProductsRequestHandler.m; sourceTree = "<group>"; };
 		31DDF4D0F7F8DD499A072A1A1F3C4521 /* AnimationPublic.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimationPublic.swift; path = "lottie-swift/src/Public/Animation/AnimationPublic.swift"; sourceTree = "<group>"; };
 		31F2381C9B16EFA2FAC6DE7358405893 /* PFPersistenceController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPersistenceController.m; path = Parse/Parse/Internal/Persistence/PFPersistenceController.m; sourceTree = "<group>"; };
-		31F7AD982BE4DC3DF5F8FD24AF2EE141 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxCoreNavigation.framework; path = MapboxCoreNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F7AD982BE4DC3DF5F8FD24AF2EE141 /* MapboxCoreNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxCoreNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32991A15B844DF2530F90295A6218816 /* Polyline-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Polyline-prefix.pch"; sourceTree = "<group>"; };
 		329AAB9AEC351196DFD19801C5708B7D /* StyleManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyleManager.swift; path = Sources/MapboxNavigation/StyleManager.swift; sourceTree = "<group>"; };
 		32D00D22A49D22B38E17188CF07BCCDC /* PFObjectController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFObjectController.m; path = Parse/Parse/Internal/Object/Controller/PFObjectController.m; sourceTree = "<group>"; };
@@ -1794,7 +1798,7 @@
 		3572DC7CEA7E85A7201AF835CD523933 /* ParseManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ParseManager.m; path = Parse/Parse/Internal/ParseManager.m; sourceTree = "<group>"; };
 		358DBAAB23183FAEDBDA72405CEEB2D5 /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = "zh-Hant.lproj/Navigation.strings"; sourceTree = "<group>"; };
 		358ED09C88549C1D011E8E9878296992 /* Keyframe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keyframe.swift; path = "lottie-swift/src/Private/Model/Keyframes/Keyframe.swift"; sourceTree = "<group>"; };
-		35DDD45D3217A98D742E2421F7DDE3AC /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		35DDD45D3217A98D742E2421F7DDE3AC /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = de.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		364AB85CF121EDDE397458E6EF8A9D0A /* MapboxNavigationNative-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "MapboxNavigationNative-xcframeworks.sh"; sourceTree = "<group>"; };
 		366413CA1C4E470D82C7A611C07F1B65 /* MapboxNavigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxNavigation.debug.xcconfig; sourceTree = "<group>"; };
 		366BF9EED70DF33C458673A318BB3722 /* PFRESTCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFRESTCommand.m; path = Parse/Parse/Internal/Commands/PFRESTCommand.m; sourceTree = "<group>"; };
@@ -1808,7 +1812,7 @@
 		37EC7D97898B94BB84BE51E7F32FDBA6 /* PFConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFConstants.m; path = Parse/Parse/PFConstants.m; sourceTree = "<group>"; };
 		3843186AE1E194A1F776F50F750FC730 /* Trim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Trim.swift; path = "lottie-swift/src/Private/Model/ShapeItems/Trim.swift"; sourceTree = "<group>"; };
 		3844A14A70D094847B6CCBF97EDB437F /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
-		3876F49C2AD6BB86CA40DE172D58AC61 /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxNavigation.framework; path = MapboxNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3876F49C2AD6BB86CA40DE172D58AC61 /* MapboxNavigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxNavigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38889DEE4648B13C3ECEB57C9A6AF38B /* MDCTextControlColorViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlColorViewModel.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlColorViewModel.m; sourceTree = "<group>"; };
 		38A0DD83FCBFA0EC21B35A527913FE2D /* PFSessionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSessionController.h; path = Parse/Parse/Internal/Session/Controller/PFSessionController.h; sourceTree = "<group>"; };
 		38A36EA5B1073AE713F87B185DB518A2 /* MDCTextControlVerticalPositioningReferenceOutlined.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceOutlined.m; path = components/private/TextControlsPrivate/src/OutlinedStyle/MDCTextControlVerticalPositioningReferenceOutlined.m; sourceTree = "<group>"; };
@@ -1844,7 +1848,7 @@
 		3F334B94EFB02C2167A0422880B1BB39 /* RouteRefreshResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteRefreshResponse.swift; path = Sources/MapboxDirections/RouteRefreshResponse.swift; sourceTree = "<group>"; };
 		3FEFDC4B85B1778048AF926289E88A74 /* PFURLSessionUploadTaskDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFURLSessionUploadTaskDelegate.h; path = Parse/Parse/Internal/Commands/CommandRunner/URLSession/Session/TaskDelegate/PFURLSessionUploadTaskDelegate.h; sourceTree = "<group>"; };
 		3FFF53C620E42A6BEF84A63A7E9E7677 /* ImageRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageRepository.swift; path = Sources/MapboxNavigation/ImageRepository.swift; sourceTree = "<group>"; };
-		400783582161406FCD05AD32D2579965 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = "pt-PT.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
+		400783582161406FCD05AD32D2579965 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = "pt-PT.lproj/Localizable.stringsdict"; sourceTree = "<group>"; };
 		400804EA585885860B76CD8DFBCEC68A /* CompoundBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompoundBezierPath.swift; path = "lottie-swift/src/Private/Utility/Primitives/CompoundBezierPath.swift"; sourceTree = "<group>"; };
 		407293CF66B2E7C49FBEC0D90727C8C5 /* StringExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = "lottie-swift/src/Private/Utility/Extensions/StringExtensions.swift"; sourceTree = "<group>"; };
 		40870F74A3BD89ADDFE7BA0C964AF585 /* AnimatedControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedControl.swift; path = "lottie-swift/src/Public/iOS/AnimatedControl.swift"; sourceTree = "<group>"; };
@@ -1869,7 +1873,7 @@
 		45601F9262D0D2C175B97D689AF2C4F9 /* CoreLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreLocation.swift; path = Sources/Polyline/CoreLocation.swift; sourceTree = "<group>"; };
 		458105D257DF170A8EC2D0743FA69A68 /* ShapeRenderLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeRenderLayer.swift; path = "lottie-swift/src/Private/NodeRenderSystem/RenderLayers/ShapeRenderLayer.swift"; sourceTree = "<group>"; };
 		459CF213CBEB02F79EF07A514ECA4284 /* PFFilePersistenceGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFFilePersistenceGroup.m; path = Parse/Parse/Internal/Persistence/Group/PFFilePersistenceGroup.m; sourceTree = "<group>"; };
-		45C5E4391582F764E545155027C98FC7 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = tr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		45C5E4391582F764E545155027C98FC7 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = tr.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		460A9AD2DE1A606EDF16ECB8EB6953D5 /* PFMulticastDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFMulticastDelegate.h; path = Parse/Parse/Internal/PFMulticastDelegate.h; sourceTree = "<group>"; };
 		461AFD562AC159778642326283E0840A /* CarPlayMapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CarPlayMapViewController.swift; path = Sources/MapboxNavigation/CarPlayMapViewController.swift; sourceTree = "<group>"; };
 		462EC8762CC99C020FC8F798F79CA0BC /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Sources/MapboxNavigation/UIViewController.swift; sourceTree = "<group>"; };
@@ -1931,13 +1935,13 @@
 		5032CA0A6C5F9D8182D0E38318E3C9CB /* LegacyRouteController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacyRouteController.swift; path = Sources/MapboxCoreNavigation/LegacyRouteController.swift; sourceTree = "<group>"; };
 		50444848CDB3920619F9383D61404DC6 /* MDCBaseTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextField.h; path = components/TextControls/src/BaseTextFields/MDCBaseTextField.h; sourceTree = "<group>"; };
 		504A9204BA542158AFBC9AFB01D95D0C /* BFCancellationToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationToken.h; path = Bolts/Common/BFCancellationToken.h; sourceTree = "<group>"; };
-		504CE9473CDB9F0B95C72BA4BF8F4273 /* Turf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Turf.framework; path = Turf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		504CE9473CDB9F0B95C72BA4BF8F4273 /* Turf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Turf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		507BB2C39EFFEA20950BB4005A1FABA3 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		508CAD412D98BFACCFCEDC418BFAFC3E /* VisualInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisualInstruction.swift; path = Sources/MapboxDirections/VisualInstruction.swift; sourceTree = "<group>"; };
 		50AE26F47554BA4419900FA064D78FFC /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		50FAA0004F8C7B41E67F3CD0D9161A0E /* CPTrip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CPTrip.swift; path = Sources/MapboxNavigation/CPTrip.swift; sourceTree = "<group>"; };
 		51AC2A4FD700AAE3285B842F12680C71 /* UIWindow+orientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+orientation.swift"; path = "NotificationBanner/Classes/UIWindow+orientation.swift"; sourceTree = "<group>"; };
-		51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Lottie.framework; path = "lottie-ios.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51BA97E8B5085EFFB47BC9C0B785CEA7 /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C0F1CE4EEBC4BFA935EA7F13DEA8FF /* UIImage+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+AlamofireImage.swift"; path = "Source/UIImage+AlamofireImage.swift"; sourceTree = "<group>"; };
 		51D046CE65060C3864AA1BB9B85C412D /* SolidLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SolidLayerModel.swift; path = "lottie-swift/src/Private/Model/Layers/SolidLayerModel.swift"; sourceTree = "<group>"; };
 		51D678B0E70540EEE0ACBDF48C60D35A /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
@@ -1945,7 +1949,7 @@
 		529312C4B8C334E850B15961F40B4E80 /* PFAnalytics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFAnalytics.m; path = Parse/Parse/PFAnalytics.m; sourceTree = "<group>"; };
 		5319F82C1BCA0DF96922117960590B2B /* PFUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUser.h; path = Parse/Parse/PFUser.h; sourceTree = "<group>"; };
 		53299998C1245F644DF4F2F87773A67C /* PFAnalyticsController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnalyticsController.h; path = Parse/Parse/Internal/Analytics/Controller/PFAnalyticsController.h; sourceTree = "<group>"; };
-		535DB0E1D85D2EA6366B7276B78A7E5B /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = da.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		535DB0E1D85D2EA6366B7276B78A7E5B /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = da.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		53EC58E7EE0423610EBE20AA2F6013E6 /* PFSessionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFSessionController.m; path = Parse/Parse/Internal/Session/Controller/PFSessionController.m; sourceTree = "<group>"; };
 		5400218FC25401820131A444C30AF426 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
 		54074ABC177162E614FF593808E09D2F /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
@@ -1991,7 +1995,7 @@
 		5AB06E29BDDDE9FE1F4DB1981E525883 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/MapboxNavigation/Dictionary.swift; sourceTree = "<group>"; };
 		5AC1FF389AC796507B761BBAC464881D /* StatusBarNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusBarNotificationBanner.swift; path = NotificationBanner/Classes/StatusBarNotificationBanner.swift; sourceTree = "<group>"; };
 		5B7ADB67E87E8CFE63D2150325A6D34E /* NodePropertyMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NodePropertyMap.swift; path = "lottie-swift/src/Private/NodeRenderSystem/NodeProperties/Protocols/NodePropertyMap.swift"; sourceTree = "<group>"; };
-		5BCFD2A65B94E6CB71928F06E7247359 /* Pods_Momaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Momaps.framework; path = "Pods-Momaps.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCFD2A65B94E6CB71928F06E7247359 /* Pods_Momaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Momaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0134A9E99B6E454CA878995831156B /* Bolts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bolts-umbrella.h"; sourceTree = "<group>"; };
 		5C5255D4FF5CD16BE5E6242DE9B30384 /* Request+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Request+AlamofireImage.swift"; path = "Source/Request+AlamofireImage.swift"; sourceTree = "<group>"; };
 		5C77EA6143FADE2D9F2AAC6C816E1E4F /* PFFileState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFFileState.m; path = Parse/Parse/Internal/File/State/PFFileState.m; sourceTree = "<group>"; };
@@ -1999,7 +2003,7 @@
 		5CCE9473AA4D769435B0FC7324BD4D73 /* FeedbackCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeedbackCollectionViewCell.swift; path = Sources/MapboxNavigation/FeedbackCollectionViewCell.swift; sourceTree = "<group>"; };
 		5CFE77B7781DCE230132AD4F56D147DC /* PFQuery+Deprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFQuery+Deprecated.h"; path = "Parse/Parse/PFQuery+Deprecated.h"; sourceTree = "<group>"; };
 		5D10BDB44C73FBB5F344324383989FD2 /* BLTNItemAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNItemAppearance.swift; path = Sources/InterfaceBuilder/BLTNItemAppearance.swift; sourceTree = "<group>"; };
-		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DE01B2125D2A76CBEFC3B70EFCFA759 /* NavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationViewController.swift; path = Sources/MapboxNavigation/NavigationViewController.swift; sourceTree = "<group>"; };
 		5DE6E0A3591DF8AD9DBDD25C8F6531C4 /* BLTNItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNItem.swift; path = Sources/Models/BLTNItem.swift; sourceTree = "<group>"; };
 		5DF472805EF05EB4A7E9FCA1C2CEA983 /* BezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BezierPath.swift; path = "lottie-swift/src/Private/Utility/Primitives/BezierPath.swift"; sourceTree = "<group>"; };
@@ -2161,7 +2165,7 @@
 		7C9A868C3F16022DCE68F246AAA67EDB /* MapboxCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxCommon.debug.xcconfig; sourceTree = "<group>"; };
 		7CB3AA4EB2276B257A691E37427230FA /* PFFileObject+Deprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFFileObject+Deprecated.h"; path = "Parse/Parse/PFFileObject+Deprecated.h"; sourceTree = "<group>"; };
 		7CC8E28B4FA8ED1EAA191717C557E505 /* Incident.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Incident.swift; path = Sources/MapboxCoreNavigation/Incident.swift; sourceTree = "<group>"; };
-		7CDFA2DAE745FD57264494A16D3C14B6 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxMobileEvents.framework; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDFA2DAE745FD57264494A16D3C14B6 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEEB989FCECDAD03A7BB8F2EC516E82 /* FloatingNotificationBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatingNotificationBanner.swift; path = NotificationBanner/Classes/FloatingNotificationBanner.swift; sourceTree = "<group>"; };
 		7CF0A066395C87EDBF57445E0E908E79 /* PFQueryState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFQueryState.m; path = Parse/Parse/Internal/Query/State/PFQueryState.m; sourceTree = "<group>"; };
 		7D103167A2376025AD8B4FA271B392A9 /* MapboxSpeechSynthesizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapboxSpeechSynthesizer.swift; path = Sources/MapboxNavigation/MapboxSpeechSynthesizer.swift; sourceTree = "<group>"; };
@@ -2178,7 +2182,7 @@
 		7FA46271DBCAC18E4F892A1567B633EB /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
 		7FA89B2BC2DB79F5ACDD2BF84D860A66 /* PFURLSessionCommandRunner.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFURLSessionCommandRunner.m; path = Parse/Parse/Internal/Commands/CommandRunner/URLSession/PFURLSessionCommandRunner.m; sourceTree = "<group>"; };
 		7FCD25DB2C10F6AFE260829CB3ABA5F6 /* MMEEventLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventLogger.h; path = Sources/MapboxMobileEvents/MMEEventLogger.h; sourceTree = "<group>"; };
-		800DAFB3CCA9305B05A44C5E49D6C235 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = ca.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		800DAFB3CCA9305B05A44C5E49D6C235 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = ca.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		80457AAFCD8ADD74E68B46A6D9F03811 /* BorderCrossing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BorderCrossing.swift; path = Sources/MapboxCoreNavigation/BorderCrossing.swift; sourceTree = "<group>"; };
 		808DCFD36A0450FE941488572D8A71EE /* LanesView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LanesView.swift; path = Sources/MapboxNavigation/LanesView.swift; sourceTree = "<group>"; };
 		80BB5E3E790690D8C835A4DED7F45F58 /* PFObject+Synchronous.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFObject+Synchronous.h"; path = "Parse/Parse/PFObject+Synchronous.h"; sourceTree = "<group>"; };
@@ -2200,7 +2204,7 @@
 		85F0E9195325774671FA3727CB9EB575 /* CGSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGSize.swift; path = Sources/MapboxNavigation/CGSize.swift; sourceTree = "<group>"; };
 		85F2EF5410FA080E7A81C2B0E0C79973 /* MDCBaseTextFieldLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextFieldLayout.h; path = components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.h; sourceTree = "<group>"; };
 		861F4365E5ED6C58E473AD4BAF3E440A /* GroupInterpolator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupInterpolator.swift; path = "lottie-swift/src/Private/NodeRenderSystem/NodeProperties/ValueProviders/GroupInterpolator.swift"; sourceTree = "<group>"; };
-		86AE566C2B8849048D1AD5B5F1DFC600 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = hu.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		86AE566C2B8849048D1AD5B5F1DFC600 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = hu.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		86FC64AFBB2976F6CCC359499C288C87 /* RouteLeg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteLeg.swift; path = Sources/MapboxDirections/RouteLeg.swift; sourceTree = "<group>"; };
 		87011D3E8CA7DBB81B4A7468A37310B3 /* ImageFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFilter.swift; path = Source/ImageFilter.swift; sourceTree = "<group>"; };
 		874AC22E27154FB5708E2C0412F78095 /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
@@ -2208,7 +2212,7 @@
 		87A3DCC5A9A3AA2CF2D3BFD396D11136 /* StyleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyleType.swift; path = Sources/MapboxNavigation/StyleType.swift; sourceTree = "<group>"; };
 		87AB9EC068933BD27D1986C5586023F2 /* VisualInstructionComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VisualInstructionComponent.swift; path = Sources/MapboxNavigation/VisualInstructionComponent.swift; sourceTree = "<group>"; };
 		87ABFD01532204CCC9CB3DFA45B98094 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		87FC47E348EBE0E786EAF63D5987E456 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = sv.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		87FC47E348EBE0E786EAF63D5987E456 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = sv.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		8805F76437A043532D743759C7F6598B /* FilepathImageProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilepathImageProvider.swift; path = "lottie-swift/src/Public/iOS/FilepathImageProvider.swift"; sourceTree = "<group>"; };
 		883D81840FEF132E1E5B70ACD208D67B /* PFUserController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUserController.h; path = Parse/Parse/Internal/User/Controller/PFUserController.h; sourceTree = "<group>"; };
 		884217A02C3263560ACA59F9A67B5CBC /* BulletinBoard-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BulletinBoard-prefix.pch"; sourceTree = "<group>"; };
@@ -2225,7 +2229,7 @@
 		8992B62FD1116A59853D6F280D4BDBD4 /* MDCTextControlVerticalPositioningReferenceBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReferenceBase.m; path = components/private/TextControlsPrivate/src/BaseStyle/MDCTextControlVerticalPositioningReferenceBase.m; sourceTree = "<group>"; };
 		89B34F974E7472E120E24B1E17B1AA17 /* PFKeyValueCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFKeyValueCache.m; path = Parse/Parse/Internal/KeyValueCache/PFKeyValueCache.m; sourceTree = "<group>"; };
 		89C94D9F5F5C48B3F25BE00FBDD892DF /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
-		89CCC06EAAB2023FE897D006E2664272 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = yo.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		89CCC06EAAB2023FE897D006E2664272 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = yo.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		8A08AC4A79EE91F391CE765805692BCD /* UIImageView+AlamofireImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+AlamofireImage.swift"; path = "Source/UIImageView+AlamofireImage.swift"; sourceTree = "<group>"; };
 		8A59B5ED7867392771043FE60BA1D523 /* PFUserController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFUserController.m; path = Parse/Parse/Internal/User/Controller/PFUserController.m; sourceTree = "<group>"; };
 		8AD0B1D5F50A21A8F89A027D29858E32 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
@@ -2235,7 +2239,7 @@
 		8B9B4348ADB97E4AACB53E67A199CD00 /* Parse-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Parse-umbrella.h"; sourceTree = "<group>"; };
 		8BF06DA420BFE5F6850D8FE70D0E107F /* Parse_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Parse_Private.h; path = Parse/Parse/Internal/Parse_Private.h; sourceTree = "<group>"; };
 		8C4AE6041C03F12E291D1B1B85367346 /* RouteLegAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteLegAttributes.swift; path = Sources/MapboxDirections/RouteLegAttributes.swift; sourceTree = "<group>"; };
-		8C4DE48F29C167BE1E4A256E51140C77 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = el.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		8C4DE48F29C167BE1E4A256E51140C77 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = el.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		8C654D58101A8647ECDF79E01F949D21 /* PFObjectUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObjectUtilities.h; path = Parse/Parse/Internal/Object/Utilities/PFObjectUtilities.h; sourceTree = "<group>"; };
 		8C727DC4659AFDE0B1BB25C46ABAA867 /* PFSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSession.h; path = Parse/Parse/PFSession.h; sourceTree = "<group>"; };
 		8CB51007639D1D08A54EE4A8D73D353F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -2295,9 +2299,9 @@
 		9689EE11D39DA5D3A02C385903D7B834 /* PFConfigController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFConfigController.m; path = Parse/Parse/Internal/Config/Controller/PFConfigController.m; sourceTree = "<group>"; };
 		96D1026A5CD0E62A994AA59DEB160A40 /* lottie-ios-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "lottie-ios-dummy.m"; sourceTree = "<group>"; };
 		9714F1CCAF651548A6FD9448EFD1EB54 /* PFCommandRunningConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFCommandRunningConstants.m; path = Parse/Parse/Internal/Commands/CommandRunner/PFCommandRunningConstants.m; sourceTree = "<group>"; };
-		976AE02CD18D7D24887AF0983A88B2C9 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		976AE02CD18D7D24887AF0983A88B2C9 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = ru.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		977A6BE9E4C813CC8E2689781C1FB253 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
-		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97A750483436405D307251EA46EFEA24 /* MGLVectorTileSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MGLVectorTileSource.swift; path = Sources/MapboxNavigation/MGLVectorTileSource.swift; sourceTree = "<group>"; };
 		982FCB36FFC70EBA7FDCF58E8F9AA000 /* TunnelAuthority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TunnelAuthority.swift; path = Sources/MapboxCoreNavigation/TunnelAuthority.swift; sourceTree = "<group>"; };
 		98807273471EB187DC438C7BB77C0843 /* RouteStepProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RouteStepProgress.swift; path = Sources/MapboxCoreNavigation/RouteStepProgress.swift; sourceTree = "<group>"; };
@@ -2309,7 +2313,7 @@
 		99BFE7BA1D5E7CDF47AC73CF951910B5 /* BLTNActionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNActionItem.swift; path = Sources/Models/BLTNActionItem.swift; sourceTree = "<group>"; };
 		99C36A8A065854D32AC2C8771D2B2862 /* PFUserState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFUserState.m; path = Parse/Parse/Internal/User/State/PFUserState.m; sourceTree = "<group>"; };
 		9A126820B4268AC8A2D792BFF774C672 /* PFFilePersistenceGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFFilePersistenceGroup.h; path = Parse/Parse/Internal/Persistence/Group/PFFilePersistenceGroup.h; sourceTree = "<group>"; };
-		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MDFInternationalization.framework; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A2AC0B8BAC6EF061EBC28825653DF99 /* MDFInternationalization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MDFInternationalization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2FAFA0B1A9D69F9CA67A6CCD150713 /* BFCancellationTokenRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationTokenRegistration.h; path = Bolts/Common/BFCancellationTokenRegistration.h; sourceTree = "<group>"; };
 		9B25A22A3700F9E2F450D51463D19F4D /* MDFRTL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDFRTL.h; path = Sources/MDFRTL.h; sourceTree = "<group>"; };
 		9B6B5E91ACC9B6245802230E82A7FAFE /* Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bolts-prefix.pch"; sourceTree = "<group>"; };
@@ -2322,7 +2326,7 @@
 		9CC282BD2039ED263D987EFE86F11DFA /* AlamofireImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AlamofireImage-dummy.m"; sourceTree = "<group>"; };
 		9D33BD8B0FBDC965E048E695EB065E7E /* PFOfflineObjectController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFOfflineObjectController.h; path = Parse/Parse/Internal/Object/Controller/OfflineController/PFOfflineObjectController.h; sourceTree = "<group>"; };
 		9D7FAB7E259BD7E90980BB3EC8EE43F8 /* ParseInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ParseInternal.h; path = Parse/Parse/Internal/ParseInternal.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DA9AE03A871F3C64F224E66FFF5EBB7 /* PFErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFErrorUtilities.m; path = Parse/Parse/Internal/PFErrorUtilities.m; sourceTree = "<group>"; };
 		9DAB8E955C6755A100803E5BD6381CE6 /* Intersection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Intersection.swift; path = Sources/MapboxDirections/Intersection.swift; sourceTree = "<group>"; };
 		9DB14AA6E4D83811D3909EED44E7F103 /* UIImage+MaterialRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MaterialRTL.m"; path = "Sources/UIImage+MaterialRTL.m"; sourceTree = "<group>"; };
@@ -2357,7 +2361,7 @@
 		A2881AA3BCD26FA6B4D4D8681912A6ED /* ColorValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorValueProvider.swift; path = "lottie-swift/src/Public/DynamicProperties/ValueProviders/ColorValueProvider.swift"; sourceTree = "<group>"; };
 		A2DCFBF9FB7F8F8F42615DD4BAC372E5 /* Parse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Parse.m; path = Parse/Parse/Parse.m; sourceTree = "<group>"; };
 		A33D1CFE3CAFC23EEC599A45C8DFF97E /* MMEConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEConstants.h; path = Sources/MapboxMobileEvents/include/MMEConstants.h; sourceTree = "<group>"; };
-		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MaterialComponents.framework; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34157B3708EDB7D17422B3D92F591D2 /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34B369CCDA2DFE47155DBB93592AA9E /* PFUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFUser.m; path = Parse/Parse/PFUser.m; sourceTree = "<group>"; };
 		A3648FA7257F14466D8BF240DBD9071C /* MapboxSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxSpeech.debug.xcconfig; sourceTree = "<group>"; };
 		A36AAEF7F144DFB377D8480A96BA9672 /* PFPropertyInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPropertyInfo.m; path = Parse/Parse/Internal/PropertyInfo/PFPropertyInfo.m; sourceTree = "<group>"; };
@@ -2412,7 +2416,7 @@
 		AF0903D570EC0A3ED92F60E8AA20E27A /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = ja.lproj/Navigation.strings; sourceTree = "<group>"; };
 		AF25FF54A7A8EEE418FB734BC5476929 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		AF3325DB357C3B4E4126FA00EB83AE41 /* MDCTextControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControl.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControl.m; sourceTree = "<group>"; };
-		AF4EF000A6BC6F3750C1831CF7BFD004 /* MapboxNavigationNative.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = MapboxNavigationNative.xcframework; sourceTree = "<group>"; };
+		AF4EF000A6BC6F3750C1831CF7BFD004 /* MapboxNavigationNative.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = MapboxNavigationNative.xcframework; sourceTree = "<group>"; };
 		AF8C57545A8DC1F4252B015C7EF28F02 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02DBE0D5005DC670DA66C57B5A81138 /* Glyph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Glyph.swift; path = "lottie-swift/src/Private/Model/Text/Glyph.swift"; sourceTree = "<group>"; };
 		B0689D391096FDE3263B57628B8BE517 /* MDCTextControlVerticalPositioningReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCTextControlVerticalPositioningReference.m; path = components/private/TextControlsPrivate/src/Shared/MDCTextControlVerticalPositioningReference.m; sourceTree = "<group>"; };
@@ -2440,7 +2444,7 @@
 		B4A384BFD7E3F65BA22FF8E82CF47478 /* PFPushUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPushUtilities.m; path = Parse/Parse/Internal/Push/Utilites/PFPushUtilities.m; sourceTree = "<group>"; };
 		B4B5C51A57B1675E0267E097EAEAC853 /* JunctionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JunctionView.swift; path = Sources/MapboxNavigation/JunctionView.swift; sourceTree = "<group>"; };
 		B4D68B4F7BF323B33DC66FA96C79851A /* ShapeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeNode.swift; path = "lottie-swift/src/Private/NodeRenderSystem/Nodes/PathNodes/ShapeNode.swift"; sourceTree = "<group>"; };
-		B4FDC48D93DBBC3650AC0590A8E12A18 /* MapboxSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxSpeech.framework; path = MapboxSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4FDC48D93DBBC3650AC0590A8E12A18 /* MapboxSpeech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B52C96890CF42015D18E0C4D9EFD6EA9 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		B53366C8E0BF2EA734AE7A9056F6006E /* Pods-Momaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Momaps.release.xcconfig"; sourceTree = "<group>"; };
 		B548CD492D140E398455EBE32B2A2E3A /* Repeater.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeater.swift; path = "lottie-swift/src/Private/Model/ShapeItems/Repeater.swift"; sourceTree = "<group>"; };
@@ -2470,7 +2474,7 @@
 		B9E8C9BFBD9BA60035F16441770366C0 /* MaterialTextControls+BaseTextAreas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MaterialTextControls+BaseTextAreas.h"; path = "components/TextControls/src/BaseTextAreas/MaterialTextControls+BaseTextAreas.h"; sourceTree = "<group>"; };
 		BA4B1498BCCC4AB8C14CA5C1E7BBF076 /* BLTNItemManager+Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BLTNItemManager+Helpers.swift"; path = "Sources/Support/Helpers/BLTNItemManager+Helpers.swift"; sourceTree = "<group>"; };
 		BA7D0401F32C6C84DE10DC350B06112A /* Turf.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Turf.debug.xcconfig; sourceTree = "<group>"; };
-		BB66B1065F4F35C19BCBBFB5D408FDAD /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Solar.framework; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB66B1065F4F35C19BCBBFB5D408FDAD /* Solar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Solar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB76B23A7324D64299BEEDD8CB458BBE /* MDCBaseTextFieldDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCBaseTextFieldDelegate.h; path = components/TextControls/src/BaseTextFields/MDCBaseTextFieldDelegate.h; sourceTree = "<group>"; };
 		BB99E4969F52210907AA23335F705EE5 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIEdgeInsets.swift; path = Sources/MapboxNavigation/UIEdgeInsets.swift; sourceTree = "<group>"; };
 		BC2A37ECBED14D865DD6FE97373B4CAD /* MMECommonEventData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMECommonEventData.h; path = Sources/MapboxMobileEvents/MMECommonEventData.h; sourceTree = "<group>"; };
@@ -2486,7 +2490,7 @@
 		BE8E73EC2D56831875D9BA5D0B27F576 /* MapboxMobileEvents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxMobileEvents-prefix.pch"; sourceTree = "<group>"; };
 		BECB681F808345309B98123654197732 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Source/Image.swift; sourceTree = "<group>"; };
 		BF078888862853B78824784366B2ABE2 /* MatchOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MatchOptions.swift; path = Sources/MapboxDirections/MapMatching/MatchOptions.swift; sourceTree = "<group>"; };
-		BF271EC7BB8556E4ABCBF2281611473E /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = ko.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		BF271EC7BB8556E4ABCBF2281611473E /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = ko.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		BF2D55DFFE8E011F2C22B6ABDCFDCDED /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/MapboxNavigation/ImageDownloader.swift; sourceTree = "<group>"; };
 		BF45B3C499B96A027EB6F2DB0B4A9773 /* Route.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Route.swift; path = Sources/MapboxNavigation/Route.swift; sourceTree = "<group>"; };
 		BF501015E618D905A30D02AA53AA1ECE /* PFPersistenceController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPersistenceController.h; path = Parse/Parse/Internal/Persistence/PFPersistenceController.h; sourceTree = "<group>"; };
@@ -2531,10 +2535,10 @@
 		C50A9B58E9605CD6B61A5836815D73E2 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Sources/MapboxNavigation/Error.swift; sourceTree = "<group>"; };
 		C55426F699F730F4A64D932DC4D23E22 /* PFUserConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFUserConstants.m; path = Parse/Parse/Internal/User/Constants/PFUserConstants.m; sourceTree = "<group>"; };
 		C57397BA531E8E4ACBD1948064E11236 /* MapboxDirections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxDirections.h; path = Sources/MapboxDirections/MapboxDirections.h; sourceTree = "<group>"; };
-		C5A823149CF57A666CA425570CD72847 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = uk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		C5A823149CF57A666CA425570CD72847 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = uk.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		C5C140AE17B7BFB070CB343E712C6B99 /* MDFInternationalization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MDFInternationalization-umbrella.h"; sourceTree = "<group>"; };
 		C5CA61C8E6D19307C1A275D5BF90277C /* PFCurrentObjectControlling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFCurrentObjectControlling.h; path = Parse/Parse/Internal/Object/CurrentController/PFCurrentObjectControlling.h; sourceTree = "<group>"; };
-		C5FC4EC27B0970F708A6473BCFDA3C50 /* BLTNBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLTNBoard.framework; path = BulletinBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FC4EC27B0970F708A6473BCFDA3C50 /* BLTNBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLTNBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FC969F0C298947304A99D75AA9B4CB /* PFRESTConfigCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRESTConfigCommand.h; path = Parse/Parse/Internal/Commands/PFRESTConfigCommand.h; sourceTree = "<group>"; };
 		C65837895AA07A50E65FF23CAEDD899E /* NavigationViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationViewControllerDelegate.swift; path = Sources/MapboxNavigation/NavigationViewControllerDelegate.swift; sourceTree = "<group>"; };
 		C6B989028D25C40AADAFCBE70BD4307F /* CongestionLevel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CongestionLevel.swift; path = Sources/MapboxNavigation/CongestionLevel.swift; sourceTree = "<group>"; };
@@ -2543,7 +2547,7 @@
 		C7F980CED40867A62AAC23313B57F3EF /* PFPersistenceGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPersistenceGroup.h; path = Parse/Parse/Internal/Persistence/Group/PFPersistenceGroup.h; sourceTree = "<group>"; };
 		C7FA35FA2FB5638D820E10D77CBFA820 /* PFRESTPushCommand.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRESTPushCommand.h; path = Parse/Parse/Internal/Commands/PFRESTPushCommand.h; sourceTree = "<group>"; };
 		C8116216EB6F26D039CFDCC8B77E1CF6 /* UIScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScreen.swift; path = Sources/MapboxNavigation/UIScreen.swift; sourceTree = "<group>"; };
-		C8498160B5D29EF2745E4D41F2D971B5 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AlamofireImage.framework; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8498160B5D29EF2745E4D41F2D971B5 /* AlamofireImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8AD43F65CB3112D95D2569454AEA56F /* Bolts-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bolts-Info.plist"; sourceTree = "<group>"; };
 		C8C7C964482E40168EB9CCD9445806E7 /* ShapeTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeTransform.swift; path = "lottie-swift/src/Private/Model/ShapeItems/ShapeTransform.swift"; sourceTree = "<group>"; };
 		C931E53A7F4D9207A42111786F57B272 /* Turf.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Turf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2573,8 +2577,8 @@
 		CDCE033F578E0F8898B7C5FD17C8954B /* DashPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DashPattern.swift; path = "lottie-swift/src/Private/Model/Objects/DashPattern.swift"; sourceTree = "<group>"; };
 		CDFFB2FCBAEF9EE817B541B5C6BDA20D /* CLLocationManager+MMEMobileEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocationManager+MMEMobileEvents.m"; path = "Sources/MapboxMobileEvents/CLLocationManager+MMEMobileEvents.m"; sourceTree = "<group>"; };
 		CE943F02055BE2CE027BC913CC1B0BF5 /* PFURLSessionFileDownloadTaskDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFURLSessionFileDownloadTaskDelegate.h; path = Parse/Parse/Internal/Commands/CommandRunner/URLSession/Session/TaskDelegate/PFURLSessionFileDownloadTaskDelegate.h; sourceTree = "<group>"; };
-		CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MarqueeLabel.framework; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF290B2F23BC3A817CD9272773A0F68F /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		CF0AA9FBFBDB70858C030769541505ED /* MarqueeLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarqueeLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF290B2F23BC3A817CD9272773A0F68F /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		CF39643EFF9408414E8854A4ADE4A90E /* MapboxDirections-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxDirections-prefix.pch"; sourceTree = "<group>"; };
 		CF8C81DFB2C045BBE73E09A12B0B4058 /* MDCBaseTextFieldLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCBaseTextFieldLayout.m; path = components/private/TextControlsPrivate/src/TextFields/MDCBaseTextFieldLayout.m; sourceTree = "<group>"; };
 		CF95899BFE9C3DB6DF6B265A799CC841 /* FloatValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FloatValueProvider.swift; path = "lottie-swift/src/Public/DynamicProperties/ValueProviders/FloatValueProvider.swift"; sourceTree = "<group>"; };
@@ -2595,7 +2599,7 @@
 		D27E01D2A99FE2A0E2762F97654D7EC8 /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = ko.lproj/Navigation.strings; sourceTree = "<group>"; };
 		D29DD57898BDD7058DB47A8FAD78CE7F /* PFSQLiteDatabase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFSQLiteDatabase.m; path = Parse/Parse/Internal/LocalDataStore/SQLite/PFSQLiteDatabase.m; sourceTree = "<group>"; };
 		D2BAE7AC5F98D6F41F480A038F0CE512 /* PFOfflineObjectController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFOfflineObjectController.m; path = Parse/Parse/Internal/Object/Controller/OfflineController/PFOfflineObjectController.m; sourceTree = "<group>"; };
-		D31C47E9770CB6F677E3CD9C89276203 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		D31C47E9770CB6F677E3CD9C89276203 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		D3A96F93A2A981F6C50391E8284B77F4 /* BLTNInterfaceBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BLTNInterfaceBuilder.swift; path = Sources/InterfaceBuilder/BLTNInterfaceBuilder.swift; sourceTree = "<group>"; };
 		D3AA68A4ECEDE6AE1C713B1A0EE88EFB /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		D3C5AFF94E2BCCF3BF8D6F3577DEB9CB /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
@@ -2686,7 +2690,7 @@
 		E4BA02A7EC9752E91E320120E43AFC1D /* NotificationBannerSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NotificationBannerSwift-umbrella.h"; sourceTree = "<group>"; };
 		E4BB447824140D95C6829972920C2A53 /* PFCloud.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFCloud.m; path = Parse/Parse/PFCloud.m; sourceTree = "<group>"; };
 		E4C26ABE44A0944E32E740A42CA9AF49 /* Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = "lottie-swift/src/Private/Model/Animation.swift"; sourceTree = "<group>"; };
-		E4EB90FF82F1E390406F9E3541F21959 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		E4EB90FF82F1E390406F9E3541F21959 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		E50137B13FEC910823FACD69C6EE5FBA /* PFPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFPolygon.m; path = Parse/Parse/PFPolygon.m; sourceTree = "<group>"; };
 		E53869B3F96250D7C182828724DA8AF6 /* SizeValueProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SizeValueProvider.swift; path = "lottie-swift/src/Public/DynamicProperties/ValueProviders/SizeValueProvider.swift"; sourceTree = "<group>"; };
 		E5895EFD93FEFC2F9CA7BA295E856637 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
@@ -2727,7 +2731,7 @@
 		ED01E687C64D3AC6CC0B2DD812D469B4 /* PFAnonymousUtils_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnonymousUtils_Private.h; path = Parse/Parse/Internal/User/AuthenticationProviders/Providers/Anonymous/PFAnonymousUtils_Private.h; sourceTree = "<group>"; };
 		ED02222F9A85824F5E3EB156B6D56DB3 /* PFRESTCloudCommand.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFRESTCloudCommand.m; path = Parse/Parse/Internal/Commands/PFRESTCloudCommand.m; sourceTree = "<group>"; };
 		ED1C0817E1204CA1823ADFD3C17FD7DF /* MapboxSpeech.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxSpeech.modulemap; sourceTree = "<group>"; };
-		ED7ADA84A7005589821D254428CD2D26 /* Parse.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Parse.bundle; path = "Parse-Parse.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED7ADA84A7005589821D254428CD2D26 /* Parse.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Parse.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA6B039F8F2849D1DE5349898D2D447 /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/MapboxNavigation/Array.swift; sourceTree = "<group>"; };
 		EDCBFE17060D329D846068822DA616A6 /* PFWeakValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFWeakValue.h; path = Parse/Parse/Internal/PFWeakValue.h; sourceTree = "<group>"; };
 		EDDCD56C6326B46655E92709AD49F67E /* BulletinDismissAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulletinDismissAnimationController.swift; path = Sources/Support/Animations/BulletinDismissAnimationController.swift; sourceTree = "<group>"; };
@@ -2744,7 +2748,7 @@
 		F0FCA82D09AFC1EDFD3C4B6B8E679EBB /* MDFInternationalization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MDFInternationalization-Info.plist"; sourceTree = "<group>"; };
 		F176CFE6E3751BD966A7B24B56FF8B0C /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		F1987D9A3F9AFB98FE97DC40701E57F3 /* BFTask+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "BFTask+Private.h"; path = "Parse/Parse/Internal/BFTask+Private.h"; sourceTree = "<group>"; };
-		F269E332716EE5F6F406772061CADD80 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; name = Localizable.stringsdict; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		F269E332716EE5F6F406772061CADD80 /* Localizable.stringsdict */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.stringsdict; name = Localizable.stringsdict; path = es.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		F3811741C576F48D093B1E0E9DBF4E0B /* Bundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bundle.swift; path = Sources/MapboxNavigation/Bundle.swift; sourceTree = "<group>"; };
 		F392AA4F1BBB9F0CBDA4650F1007BA64 /* MDFRTL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDFRTL.m; path = Sources/MDFRTL.m; sourceTree = "<group>"; };
 		F409BB478EB7D0654C3BCFADBC0EB9ED /* Navigation.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Navigation.strings; path = ru.lproj/Navigation.strings; sourceTree = "<group>"; };
@@ -2769,7 +2773,7 @@
 		F802436DDA9297702E77C91486127C4A /* PFConfig+Synchronous.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFConfig+Synchronous.h"; path = "Parse/Parse/PFConfig+Synchronous.h"; sourceTree = "<group>"; };
 		F8152CABCF09A8DAE4BDE8B040BEA8BC /* PFApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFApplication.m; path = Parse/Parse/Internal/PFApplication.m; sourceTree = "<group>"; };
 		F840BECF79EB8281E2D2F0F8CE32B33C /* ResponseDisposition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseDisposition.swift; path = Sources/MapboxDirections/ResponseDisposition.swift; sourceTree = "<group>"; };
-		F84B331B5D6AAF1548DD1BB004AE5C2A /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bolts.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84B331B5D6AAF1548DD1BB004AE5C2A /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84F2E1AF48F12B8E231B21BD418C46B /* PFEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFEncoder.m; path = Parse/Parse/PFEncoder.m; sourceTree = "<group>"; };
 		F8E4C627C15867FFE37DB3AF473EF96A /* GeoJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoJSON.swift; path = Sources/Turf/GeoJSON.swift; sourceTree = "<group>"; };
 		F8EAD72C9BA095075349C8DA0F446011 /* ImageLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLayerModel.swift; path = "lottie-swift/src/Private/Model/Layers/ImageLayerModel.swift"; sourceTree = "<group>"; };
@@ -2783,7 +2787,7 @@
 		F9C60813751447B9770FF304560BC7DA /* PFThreadsafety.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PFThreadsafety.m; path = Parse/Parse/Internal/ThreadSafety/PFThreadsafety.m; sourceTree = "<group>"; };
 		F9FA86B3FDBD817749AA41574E5FF826 /* PFEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFEncoder.h; path = Parse/Parse/PFEncoder.h; sourceTree = "<group>"; };
 		FA00B9C32166112ED58B1A60A2763F51 /* NSUserDefaults+MMEConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+MMEConfiguration.m"; path = "Sources/MapboxMobileEvents/NSUserDefaults+MMEConfiguration.m"; sourceTree = "<group>"; };
-		FA4C35B12F2D16AC355AAAA42676CB55 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxDirections.framework; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4C35B12F2D16AC355AAAA42676CB55 /* MapboxDirections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxDirections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA97BFED32BE4C6A12CCFE234AE05D0A /* PFObjectControlling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObjectControlling.h; path = Parse/Parse/Internal/Object/Controller/PFObjectControlling.h; sourceTree = "<group>"; };
 		FAA2CC213DA7C8AB9C35BB29DDA7B8D3 /* NotificationBannerUtilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationBannerUtilities.swift; path = NotificationBanner/Classes/NotificationBannerUtilities.swift; sourceTree = "<group>"; };
 		FAB65D89A29F69C7729230D3FA28D584 /* NSData+MMEGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MMEGZIP.h"; path = "Sources/MapboxMobileEvents/NSData+MMEGZIP.h"; sourceTree = "<group>"; };
@@ -3080,7 +3084,6 @@
 				1A7410659F58852DC98E799F01934423 /* UIKit+MMEMobileEvents.m */,
 				2AD730A37BEF5865F7031C014A11D9F5 /* Support Files */,
 			);
-			name = MapboxMobileEvents;
 			path = MapboxMobileEvents;
 			sourceTree = "<group>";
 		};
@@ -3179,7 +3182,6 @@
 				CAEB85E5B3A2B51DD2D2F166A66ED721 /* MBSpeechOptions.swift */,
 				8E8924B1FDC0D6F710D8A80EAB4B96FE /* Support Files */,
 			);
-			name = MapboxSpeech;
 			path = MapboxSpeech;
 			sourceTree = "<group>";
 		};
@@ -3207,7 +3209,6 @@
 				09F60C16A0E5C79C1F64D2C28AED9EDA /* Polyline.swift */,
 				88DDDF4A41B7E8F92B7094F2A8424788 /* Support Files */,
 			);
-			name = Polyline;
 			path = Polyline;
 			sourceTree = "<group>";
 		};
@@ -3217,7 +3218,6 @@
 				38A9CDA5E6BA6F4070AF52D1606A4F5D /* Frameworks */,
 				4B0262202D7ADB1B8663633282EBC0FA /* Support Files */,
 			);
-			name = "Mapbox-iOS-SDK";
 			path = "Mapbox-iOS-SDK";
 			sourceTree = "<group>";
 		};
@@ -3444,7 +3444,6 @@
 				72E93730560ED7A64567DBBA019F356E /* Resources */,
 				B3AF0FAB025357AC35D11F1E45121CCA /* Support Files */,
 			);
-			name = MapboxNavigation;
 			path = MapboxNavigation;
 			sourceTree = "<group>";
 		};
@@ -3454,7 +3453,6 @@
 				12C2310D4F84897392937FAE15A60FFA /* Frameworks */,
 				0C51CB12FACFE409A8CEC4BE81E52ED5 /* Support Files */,
 			);
-			name = MapboxCommon;
 			path = MapboxCommon;
 			sourceTree = "<group>";
 		};
@@ -3489,7 +3487,6 @@
 				A3D23F0A5A0153A589491D60EB7D9DAF /* UIView+MaterialRTL.m */,
 				1AFA8EBF6D406361749ABC569BAE824F /* Support Files */,
 			);
-			name = MDFInternationalization;
 			path = MDFInternationalization;
 			sourceTree = "<group>";
 		};
@@ -3553,7 +3550,6 @@
 				6E672E85E70070FBF4E5AC6E580CF64A /* Core */,
 				244DFFA045DBFB86B0D1F93D39B904AD /* Support Files */,
 			);
-			name = Parse;
 			path = Parse;
 			sourceTree = "<group>";
 		};
@@ -3571,7 +3567,6 @@
 				8A08AC4A79EE91F391CE765805692BCD /* UIImageView+AlamofireImage.swift */,
 				64A9D4267A4CF38C3CC2A3E8A9F384B5 /* Support Files */,
 			);
-			name = AlamofireImage;
 			path = AlamofireImage;
 			sourceTree = "<group>";
 		};
@@ -3615,7 +3610,6 @@
 				1727096B01FA1735070F65A1296F657F /* Validation.swift */,
 				B3F2F139F18C2247EBC962A0E05E20F0 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -3654,7 +3648,6 @@
 				2885BC63F4F123ED06E578AC0DF3000A /* TextControls+OutlinedTextAreas */,
 				5DFEB6D2767AE45A8E9CC6292E99FB7C /* TextControls+OutlinedTextFields */,
 			);
-			name = MaterialComponents;
 			path = MaterialComponents;
 			sourceTree = "<group>";
 		};
@@ -4176,7 +4169,6 @@
 				D015804EAF56A96559DF0B71826BDD9D /* MarqueeLabel.swift */,
 				F73750C6A26D532BF04D9BE4D69C3E69 /* Support Files */,
 			);
-			name = MarqueeLabel;
 			path = MarqueeLabel;
 			sourceTree = "<group>";
 		};
@@ -4262,7 +4254,6 @@
 				0EDDBBF5E0E458B329025FB13FABA67E /* URLSession.swift */,
 				2F412D912887B63FECFEA4EB777D0C46 /* Support Files */,
 			);
-			name = MapboxCoreNavigation;
 			path = MapboxCoreNavigation;
 			sourceTree = "<group>";
 		};
@@ -4272,7 +4263,6 @@
 				F56C169BD0909103FEEA60830D5C199D /* Solar.swift */,
 				144BB851FB1C844C53076224A8161363 /* Support Files */,
 			);
-			name = Solar;
 			path = Solar;
 			sourceTree = "<group>";
 		};
@@ -4431,7 +4421,6 @@
 				587E7D2E40FBDDE78A5FBBA70E859BE9 /* VectorsExtensions.swift */,
 				9ABAE39C3A0976DF81DC0155472D5485 /* Support Files */,
 			);
-			name = "lottie-ios";
 			path = "lottie-ios";
 			sourceTree = "<group>";
 		};
@@ -4523,7 +4512,6 @@
 				B7559836C1B0CB62E8AB83D539E2C97F /* UIView+RoundedView.swift */,
 				FC7289ABDDA209C29A4350FD31898BB2 /* Support Files */,
 			);
-			name = BulletinBoard;
 			path = BulletinBoard;
 			sourceTree = "<group>";
 		};
@@ -4552,7 +4540,6 @@
 				D1E0581C4EDD830FF2A533FCC4C7FA93 /* Turf.swift */,
 				B4977B7DEBF406FE76ACA2B7F80904F6 /* Support Files */,
 			);
-			name = Turf;
 			path = Turf;
 			sourceTree = "<group>";
 		};
@@ -4562,7 +4549,6 @@
 				980AF725F248D5D05454FD31B298B7DB /* Frameworks */,
 				558B069C4638F595617A50B5CF129B3F /* Support Files */,
 			);
-			name = MapboxNavigationNative;
 			path = MapboxNavigationNative;
 			sourceTree = "<group>";
 		};
@@ -4642,7 +4628,6 @@
 				26C08A8AB6A11B0303F20DFCACB92BA4 /* UILayoutSupport+Extensions.swift */,
 				DBEC04F65EDF7F10745EDE3442B5E00D /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -4718,7 +4703,6 @@
 				FEECF9E38295A00E5817E3D1DB2A00DB /* Frameworks */,
 				C2B4D1C5550BADD7B08F722890DEEE3B /* Support Files */,
 			);
-			name = MapboxAccounts;
 			path = MapboxAccounts;
 			sourceTree = "<group>";
 		};
@@ -4740,7 +4724,6 @@
 				51AC2A4FD700AAE3285B842F12680C71 /* UIWindow+orientation.swift */,
 				8B4CFA5887ED22854B86EFA3D0823D1D /* Support Files */,
 			);
-			name = NotificationBannerSwift;
 			path = NotificationBannerSwift;
 			sourceTree = "<group>";
 		};
@@ -4750,7 +4733,6 @@
 				063DFF7489BE5514A86DB1582E70ADAE /* Support Files */,
 				35BF621E8CC992629374AF0313BF1ABA /* Tasks */,
 			);
-			name = Bolts;
 			path = Bolts;
 			sourceTree = "<group>";
 		};
@@ -4826,7 +4808,6 @@
 				34E302C2A0A6E375899D91D4368C4708 /* Waypoint.swift */,
 				4C922EB758840EE7FD5CEFC9F87520ED /* Support Files */,
 			);
-			name = MapboxDirections;
 			path = MapboxDirections;
 			sourceTree = "<group>";
 		};
@@ -5817,6 +5798,33 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				bg,
+				ca,
+				da,
+				de,
+				el,
+				es,
+				fr,
+				he,
+				hu,
+				ja,
+				ko,
+				nl,
+				"pt-BR",
+				"pt-PT",
+				ru,
+				sv,
+				tr,
+				uk,
+				vi,
+				yo,
+				"zh-Hans",
+				fa,
+				it,
+				lt,
+				sl,
+				"zh-Hant",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = E20D6838D409AD85B42D9EC835ADBC29 /* Products */;
