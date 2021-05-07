@@ -52,20 +52,39 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
         mapView.setCenter(CLLocationCoordinate2D(latitude: 40.71, longitude: -74.00), zoomLevel: 9, animated: false)
         view.addSubview(mapView)
         
+        /*
         //testing annotations
         let annotation = MGLPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2D(latitude: 40.77014, longitude: -73.97480)
         annotation.title = "Central Park"
-        annotation.subtitle = "This is where my friends and I go to eat lunch"
+        annotation.subtitle = "This is where my friends and I go to eat dinner"
         mapView.addAnnotation(annotation)
+        */
+        
+        //testing out create annotation
+        createAnnotation(mapView, _lat: 40.77014, _long: -73.97480, _name: "Central Park", _description: "This is where my friends and I go to eat dinner")
+        
+        
+        createAnnotation(mapView, _lat: 40.7115, _long: -74.00, _name: "Hangout", _description: "This is where my friends and I hangout")
         
         mapView.delegate = self
         
         //  display the user's location
         mapView.showsUserLocation = true
+        // tracks the user's location on the map
+        //mapView.setUserTrackingMode(.follow, animated: true, completionHandler: nil)
 
     }
     
+    
+    func createAnnotation(_ mapView: MGLMapView, _lat: Double, _long: Double, _name: String, _description: String) {
+        let annotation = MGLPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2D(latitude: _lat, longitude: _long)
+        annotation.title = _name
+        annotation.subtitle = _description
+        mapView.addAnnotation(annotation)
+    }
+        
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
     // Always allow callouts to popup when annotations are tapped.
     return true
