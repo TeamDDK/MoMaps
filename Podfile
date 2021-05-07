@@ -13,6 +13,7 @@ target 'Momaps' do
   pod 'MaterialComponents/TextControls+OutlinedTextFields'
   pod 'lottie-ios'
   pod 'Mapbox-iOS-SDK', '~> 6.3.0'
+  pod 'MapboxNavigation', '~> 1.4.0'
   pod 'BulletinBoard'
 
 end
