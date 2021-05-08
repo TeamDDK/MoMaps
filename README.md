@@ -63,6 +63,12 @@ Calculated route when selecting an annotiation and also changing the route when 
 
 ![](https://github.com/TeamDDK/MoMaps/blob/50adb62bfd4f660ff649b0699ce79eac1c60f980/gifs/route.gif)
 
+Added UI elements and logic to the add screen and enabled animations and deletions to occur withing the favorites and planner tabs
+
+![](https://github.com/TeamDDK/MoMaps/blob/841e65ca32e3444537362e4f6e1f700c624d2fe2/gifs/favorites.gif)
+
+![](https://github.com/TeamDDK/MoMaps/blob/841e65ca32e3444537362e4f6e1f700c624d2fe2/gifs/Planner.gif)
+
 
 ### 2. Screen Archetypes
 
