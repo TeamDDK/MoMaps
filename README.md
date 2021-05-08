@@ -57,6 +57,10 @@ map scroll and zoom in
 
 ![](https://github.com/TeamDDK/MoMaps/blob/6009805fb09f1d8cfc27c057cdb50d2c5967eddb/gifs/map%20show%20off.gif)
 
+Calculated route when selecting an annotiation and also changing the route when selecting a different annotation and reflecting changes on the View
+
+![](https://github.com/TeamDDK/MoMaps/blob/50adb62bfd4f660ff649b0699ce79eac1c60f980/gifs/route.gif)
+
 
 ### 2. Screen Archetypes
 
