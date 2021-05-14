@@ -31,6 +31,16 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
     var routeOptions: NavigationRouteOptions?
     var route: Route?
     
+    @IBOutlet weak var viewContainerForCL: UIView!
+    
+    @IBAction func currentLocationButton(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var viewContainerforLogout: UIView!
+    
+    
+    
+    
     @IBAction func logoutButton(_ sender: Any) {
         PFUser.logOut()
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -49,7 +59,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
         let banner = GrowingNotificationBanner(title: "Welcome back!", subtitle: "Hey \(user)! - explore new locations and navigate it through our step-by-step navigation feature!", leftView: nil, rightView: nil, style: .success, colors: nil)
         banner.show()
         // Do any additional setup after loading the view.
-        
+        viewContainerforLogout.layer.cornerRadius = 15
         //dark mode style
         let url = URL(string: "mapbox://styles/mapbox/dark-v10")
         mapView = NavigationMapView(frame: view.bounds, styleURL: url)
@@ -59,6 +69,8 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         mapView.setCenter(CLLocationCoordinate2D(latitude: 40.74699, longitude: -73.98742), zoomLevel: 12, animated: false)
         view.addSubview(mapView)
+        view.addSubview(viewContainerForCL)
+        view.addSubview(viewContainerforLogout)
         
         
         //lat: 40.74699, -73.98742
