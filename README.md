@@ -69,6 +69,17 @@ Added UI elements and logic to the add screen and enabled animations and deletio
 
 ![](https://github.com/TeamDDK/MoMaps/blob/841e65ca32e3444537362e4f6e1f700c624d2fe2/gifs/Planner.gif)
 
+### 3rd week
+
+Clicking on annotation's text causes turn-by-turn navigation to happen. Audio directions occur. User is able to see estimated travel distance, travel time, arrival tiem. User is able to cancel and navigate to another location of their choosing. 
+
+![](https://github.com/TeamDDK/MoMaps/blob/893c55902f04ebba712afb4b7213260cba9e05d9/gifs/routeNavigation.gif)
+
+Navigation continues in the background, audio directions continue in the background. 
+
+![](https://github.com/TeamDDK/MoMaps/blob/893c55902f04ebba712afb4b7213260cba9e05d9/gifs/navigationInBackground.gif)
+
+
 
 ### 2. Screen Archetypes
 
