@@ -79,6 +79,8 @@ Navigation continues in the background, audio directions continue in the backgro
 
 ![](https://github.com/TeamDDK/MoMaps/blob/893c55902f04ebba712afb4b7213260cba9e05d9/gifs/navigationInBackground.gif)
 
+Addresses get converted into coordinates. 
+
 
 
 ### 2. Screen Archetypes
