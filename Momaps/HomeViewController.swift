@@ -72,6 +72,9 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
         view.addSubview(viewContainerForCL)
         view.addSubview(viewContainerforLogout)
         
+        
+        //lat: 40.74699, -73.98742
+        
         /*
         //testing annotations
         let annotation = MGLPointAnnotation()
@@ -182,6 +185,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
             source.shape = polyline
         } else {
             let source = MGLShapeSource(identifier: "route-source", features: [polyline], options: nil)
+            
 
             // Customize the route line color and width
             let lineStyle = MGLLineStyleLayer(identifier: "route-style", source: source)
@@ -192,6 +196,17 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
             mapView.style?.addSource(source)
             mapView.style?.addLayer(lineStyle)
         }
+    }
+    
+    
+    // Present the navigation view controller when the callout is selected
+    func mapView(_ mapView: MGLMapView, tapOnCalloutFor annotation: MGLAnnotation) {
+    guard let route = route, let routeOptions = routeOptions else {
+    return
+    }
+        let navigationViewController = NavigationViewController(for: route, routeIndex: 0, routeOptions: routeOptions)
+    navigationViewController.modalPresentationStyle = .fullScreen
+    self.present(navigationViewController, animated: true, completion: nil)
     }
     
 

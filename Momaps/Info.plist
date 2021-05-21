@@ -59,6 +59,10 @@
 	</array>
 	<key>MGLMapboxAccessToken</key>
 	<string>pk.eyJ1IjoiZGV3NjEzIiwiYSI6ImNrbmp2YXU5ajA0Y2Qyb21razNqNmpkbHAifQ.a2_rOB4pFZS9uMKc4xPHaA</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
