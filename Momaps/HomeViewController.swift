@@ -190,7 +190,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
             // Customize the route line color and width
             let lineStyle = MGLLineStyleLayer(identifier: "route-style", source: source)
             lineStyle.lineColor = NSExpression(forConstantValue: #colorLiteral(red: 0.1897518039, green: 0.3010634184, blue: 0.7994888425, alpha: 1))
-            lineStyle.lineWidth = NSExpression(forConstantValue: 3)
+            lineStyle.lineWidth = NSExpression(forConstantValue: 6)
 
             // Add the source and style layer of the route line to the map
             mapView.style?.addSource(source)

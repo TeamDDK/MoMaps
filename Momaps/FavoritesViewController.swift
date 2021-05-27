@@ -26,7 +26,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "FaveLocations")
-        query.includeKey("User")
+        query.includeKey("user")
         query.limit = 20
         
         query.findObjectsInBackground { locations, error in
