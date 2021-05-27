@@ -47,7 +47,7 @@ class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let query = PFQuery(className: "PlanLocations")
-        query.includeKey("User")
+        query.includeKey("user")
         query.limit = 20
         
         query.findObjectsInBackground { locations, error in

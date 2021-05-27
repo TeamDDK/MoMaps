@@ -8,8 +8,14 @@
 import UIKit
 import Parse
 import BLTNBoard
+import Mapbox
+import MapboxCoreNavigation
+import MapboxNavigation
+import MapboxDirections
 
 class AddViewController: UIViewController {
+    var globalLong: Double = 0
+    var globalLat: Double = 0
     
     private lazy var FaveboardManager: BLTNItemManager = {
         let item = BLTNPageItem(title: "Added to Favorites Tab!")
@@ -35,6 +41,30 @@ class AddViewController: UIViewController {
         item.appearance.titleTextColor = .black
         return BLTNItemManager(rootItem: item)
     }()
+    private lazy var FailPlanboardManager: BLTNItemManager = {
+        let item = BLTNPageItem(title: "ERROR!")
+        item.image = UIImage(named: "error")
+        item.actionButtonTitle = "Please try again"
+        item.descriptionText = "Failed to add location because the address that was entered was incorrect!"
+        item.actionHandler = { _ in
+            self.didTapFaveBoardContinue()
+        }
+        //item.appearance.actionButtonColor = .systemGreen
+        item.appearance.titleTextColor = .black
+        return BLTNItemManager(rootItem: item)
+    }()
+    private lazy var ErrorAdd: BLTNItemManager = {
+        let item = BLTNPageItem(title: "Whoops something went wrong!")
+        item.image = UIImage(named: "error")
+        item.actionButtonTitle = "Please try again"
+        item.descriptionText = "Failed to add location because could not connect to server!"
+        item.actionHandler = { _ in
+            self.didTapFaveBoardContinue()
+        }
+        //item.appearance.actionButtonColor = .systemGreen
+        item.appearance.titleTextColor = .black
+        return BLTNItemManager(rootItem: item)
+    }()
     
     
     @IBOutlet weak var viewInputs: UIView!
@@ -47,56 +77,112 @@ class AddViewController: UIViewController {
     @IBOutlet weak var descriptionTextField: UITextField!
     
     @IBAction func addFavoritesButton(_ sender: Any) {
-        if (nameTextField.text == "" || nameTextField.text == "" || nameTextField.text == "" ){
+        if (nameTextField.text == "" || addressTextField.text == "" || descriptionTextField.text == "" ){
             let alert = UIAlertController(title: "Whoops!", message: "Please make sure all textFields are filled in!", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
                     self.present(alert, animated: true)
             
         }else{
+            func getLocation(from address: String, completion: @escaping (_ location: CLLocationCoordinate2D?)-> Void) {
+                    let geocoder = CLGeocoder()
+                    geocoder.geocodeAddressString(address) { (placemarks, error) in
+                        guard let placemarks = placemarks,
+                        let location = placemarks.first?.location?.coordinate else {
+                            completion(nil)
+                            return
+                        }
+                        completion(location)
+                    }
+                }
+            
+            let address = addressTextField.text
+            getLocation(from: address!) { [self] location in
+                globalLong = location?.longitude ?? 0
+                globalLat = location?.latitude ?? 0
+                if (globalLong == 0 || globalLat == 0){
+                    self.FailPlanboardManager.showBulletin(above: self)
+                    addressTextField.layer.borderColor = UIColor.red.cgColor
+                }else{
         let FaveLocations = PFObject(className: "FaveLocations")
         FaveLocations["Name"] = nameTextField.text!
         FaveLocations["Address"] = addressTextField.text!
         FaveLocations["Description"] = descriptionTextField.text!
         FaveLocations["User"] = PFUser.current()
+        FaveLocations["Longitude"] = globalLong
+        FaveLocations["Latitude"] = globalLat
         
-        FaveLocations.saveInBackground { success, error in
-            if success{
-                self.FaveboardManager.showBulletin(above: self)
-            }else{
-                print("Error")
+                    FaveLocations.saveInBackground { success, error in
+                        if success{
+                            self.FaveboardManager.showBulletin(above: self)
+                            addressTextField.layer.borderColor = UIColor.white.cgColor
+                                        nameTextField.text?.removeAll()
+                                        addressTextField.text?.removeAll()
+                                        descriptionTextField.text?.removeAll()
+
+                        }else{
+                            self.ErrorAdd.showBulletin(above: self)
+                        }
+                    }
+                }
             }
         }
-            nameTextField.text?.removeAll()
-            addressTextField.text?.removeAll()
-            descriptionTextField.text?.removeAll()
-    }
 }
+
+
     @IBAction func addPlansButton(_ sender: Any) {
-        if (nameTextField.text == "" || nameTextField.text == "" || nameTextField.text == "" ){
+        if (nameTextField.text == "" || addressTextField.text == "" || descriptionTextField.text == "" ){
             let alert = UIAlertController(title: "Whoops!", message: "Please make sure all textFields are filled in!", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
                     self.present(alert, animated: true)
             
         }else{
-        let PlanLocations = PFObject(className: "PlanLocations")
-        PlanLocations["Name"] = nameTextField.text!
-        PlanLocations["Address"] = addressTextField.text!
-        PlanLocations["Description"] = descriptionTextField.text!
-        PlanLocations["User"] = PFUser.current()
-        
-        PlanLocations.saveInBackground { success, error in
-            if success{
-                self.PlanboardManager.showBulletin(above: self)
+            func getLocation(from address: String, completion: @escaping (_ location: CLLocationCoordinate2D?)-> Void) {
+                    let geocoder = CLGeocoder()
+                    geocoder.geocodeAddressString(address) { (placemarks, error) in
+                        guard let placemarks = placemarks,
+                        let location = placemarks.first?.location?.coordinate else {
+                            completion(nil)
+                            return
+                        }
+                        completion(location)
+                    }
+                }
+            
+            let address = addressTextField.text
+            
+            getLocation(from: address!) { [self] location in
+                globalLong = location?.longitude ?? 0
+                globalLat = location?.latitude ?? 0
+                if (globalLong == 0 || globalLat == 0){
+                    self.FailPlanboardManager.showBulletin(above: self)
+                    addressTextField.layer.borderColor = UIColor.red.cgColor
+                }else{
+                    let PlanLocations = PFObject(className: "PlanLocations")
+                    PlanLocations["Name"] = nameTextField.text!
+                    PlanLocations["Address"] = addressTextField.text!
+                    PlanLocations["Description"] = descriptionTextField.text!
+                    PlanLocations["User"] = PFUser.current()
+                    PlanLocations["Longitude"] = globalLong
+                    PlanLocations["Latitude"] = globalLat
+                        
+                    PlanLocations.saveInBackground { success, error in
+                        if success{
+                            self.PlanboardManager.showBulletin(above: self)
+                                        nameTextField.text?.removeAll()
+                                        addressTextField.text?.removeAll()
+                                        descriptionTextField.text?.removeAll()
+                            addressTextField.layer.borderColor = UIColor.white.cgColor
 
-            }else{
+                        }else{
+                            self.ErrorAdd.showBulletin(above: self)
+                        }
+                    }
+                }
             }
         }
-            nameTextField.text?.removeAll()
-            addressTextField.text?.removeAll()
-            descriptionTextField.text?.removeAll()
-    }
 }
     override func viewDidLoad() {
+        //print(globalLat)
         super.viewDidLoad()
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = viewInputs.bounds
@@ -129,6 +215,7 @@ class AddViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+
 
     /*
     // MARK: - Navigation
