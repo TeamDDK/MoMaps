@@ -68,7 +68,6 @@ class AddViewController: UIViewController {
     
     
     @IBOutlet weak var viewInputs: UIView!
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var descriptionlabel: UILabel!
@@ -118,7 +117,6 @@ class AddViewController: UIViewController {
                                         nameTextField.text?.removeAll()
                                         addressTextField.text?.removeAll()
                                         descriptionTextField.text?.removeAll()
-
                         }else{
                             self.ErrorAdd.showBulletin(above: self)
                         }
@@ -184,29 +182,31 @@ class AddViewController: UIViewController {
     override func viewDidLoad() {
         //print(globalLat)
         super.viewDidLoad()
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = viewInputs.bounds
-        gradientLayer.colors = [UIColor.systemPink.cgColor,UIColor.systemOrange.cgColor]
+//        let gradientLayer = CAGradientLayer()
+//        gradientLayer.frame = viewInputs.bounds
+//        gradientLayer.colors = [UIColor.systemPink.cgColor,UIColor.systemOrange.cgColor]
         //viewInputs.layer.addSublayer(gradientLayer)
-        nameTextField.layer.cornerRadius = 10.0
-        nameTextField.layer.borderWidth = 2.0
-        nameTextField.layer.borderColor = UIColor.white.cgColor
+        nameTextField.layer.cornerRadius = 5.0
+        nameTextField.layer.borderWidth = 1.0
+        nameTextField.layer.borderColor = UIColor.black.cgColor
         nameTextField.layer.masksToBounds = true
         
-        addressTextField.layer.cornerRadius = 10.0
-        addressTextField.layer.borderWidth = 2.0
-        addressTextField.layer.borderColor = UIColor.white.cgColor
+        addressTextField.layer.cornerRadius = 5.0
+        addressTextField.layer.borderWidth = 1.0
+        addressTextField.layer.borderColor = UIColor.black.cgColor
         addressTextField.layer.masksToBounds = true
         
-        descriptionTextField.layer.cornerRadius = 10.0
-        descriptionTextField.layer.borderWidth = 2.0
-        descriptionTextField.layer.borderColor = UIColor.white.cgColor
+        descriptionTextField.layer.cornerRadius = 5.0
+        descriptionTextField.layer.borderWidth = 1.0
+        descriptionTextField.layer.borderColor = UIColor.black.cgColor
         descriptionTextField.layer.masksToBounds = true
         descriptionTextField.textAlignment = .left
         descriptionTextField.contentVerticalAlignment = .top
         viewInputs.layer.cornerRadius = 25
+        viewInputs.layer.borderColor = UIColor.black.cgColor
+        viewInputs.layer.borderWidth = 1.5
         viewInputs.layer.shadowColor = UIColor.black.cgColor
-        viewInputs.layer.shadowOpacity = 1
+        //viewInputs.layer.shadowOpacity = 1
         viewInputs.layer.shadowOffset = .zero
         viewInputs.layer.shadowRadius = 10
         
