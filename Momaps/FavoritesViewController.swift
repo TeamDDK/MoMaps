@@ -16,8 +16,6 @@ protocol FavoritesViewControllerDelegate {
 
 class FavoritesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    //location["latitude"]
-    //locaton["longitude"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -93,7 +91,7 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
             let object = locations[indexPath.row] as! PFObject
             self.locations.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
-            print(object)
+            //print(object)
             object.deleteInBackground { (success, error) in
                         if (success) {
                             self.favoritesDelegate?.didDeleteFavorite(_lat: latitude, _long: longitude, _name: name, _description: description)

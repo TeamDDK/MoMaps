@@ -115,7 +115,7 @@ class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewD
             let object = locations[indexPath.row] as! PFObject
             self.locations.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
-            print(object)
+            //print(object)
             object.deleteInBackground { (success, error) in
                         if (success) {
                             self.plannedDelegate?.didDeletePlanned(_lat: latitude, _long: longitude, _name: name, _description: description)

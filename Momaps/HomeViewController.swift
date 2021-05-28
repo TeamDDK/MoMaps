@@ -28,7 +28,7 @@ extension UIViewController{
 
 class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewControllerDelegate, PlannedViewControllerDelegate, AddViewControllerDelegate {
 
-    
+    //MARK: - Delegate protocols implemented
     func didFinishAdding(_lat: Double, _long: Double, _name: String, _description: String) {
         createAnnotation(_lat: _lat, _long: _long, _name: _name, _description: _description)
     }
@@ -47,6 +47,11 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     func didDeletePlanned(_lat: Double, _long: Double, _name: String, _description: String) {
         for annotation in mapView.annotations!{
             if (annotation.title == _name){
+                if let source = mapView.style?.source(withIdentifier: "route-source") as? MGLShapeSource {
+                    let lineStyle = MGLLineStyleLayer(identifier: "route-style", source: source)
+                    mapView.style?.removeLayer(lineStyle)
+                    mapView.style?.removeSource(source)
+                }
                 mapView.deselectAnnotation(annotation, animated: false)
                 mapView.removeAnnotation(annotation)
             }
@@ -68,12 +73,18 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     func didDeleteFavorite(_lat: Double, _long: Double, _name: String, _description: String) {
         for annotation in mapView.annotations!{
             if (annotation.title == _name){
+                if let source = mapView.style?.source(withIdentifier: "route-source") as? MGLShapeSource {
+                    let lineStyle = MGLLineStyleLayer(identifier: "route-style", source: source)
+                    mapView.style?.removeSource(source)
+                    mapView.style?.removeLayer(lineStyle)
+                }
                 mapView.deselectAnnotation(annotation, animated: false)
                 mapView.removeAnnotation(annotation)
             }
         }
     }
     
+    // MARK: - Global Variables and outlets
     //map stuff
     var mapView: NavigationMapView!
     var routeOptions: NavigationRouteOptions?
@@ -103,6 +114,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     }
     
     
+    //MARK: - View did Load
     
     override func viewDidLoad() {
         
@@ -126,21 +138,29 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
         view.addSubview(viewContainerForCL)
         view.addSubview(viewContainerforLogout)
 
-        //testing out create annotation
-        createAnnotation(_lat: 40.77014, _long: -73.97480, _name: "Central Park", _description: "This is where my friends and I go to eat dinner")
+        /*places to try:
+         
+         Place: Central library
+         Address: 89-11 Merrick Blvd, Jamaica, NY 11432
+         
+         Place: Central Park
+         Address: Central Park
+         
+         Place: Bronx Zoo
+         Address: 2300 Southern Blvd, Bronx, NY 10460
+         
+         Place: brooklyn bridge
+         Address: Brooklyn Bridge, New York, NY 10038
+         
+         please add more guys
+         
+         */
         
-        createAnnotation(_lat: 40.7115, _long: -74.00, _name: "Hangout", _description: "This is where my friends and I hangout")
         
         
 
     }
-    /*
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
 
-    }
- */
-    
     // MARK: - functions that handle initial setup
     //function sets up the map
     func setUpMap(){
@@ -194,9 +214,6 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
             }
         }
         
-
-
-        
     }
 
     func placeFaveLocations(){
@@ -237,7 +254,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     }
     
     
-    
+    //creates an annotation on the map
     func createAnnotation(_lat: Double, _long: Double, _name: String, _description: String) {
         let annotation = MGLPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2D(latitude: _lat, longitude: _long)
@@ -246,30 +263,16 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
         mapView.addAnnotation(annotation)
     }
         
+    //lets annotations display their info
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
     // Always allow callouts to popup when annotations are tapped.
     return true
     }
     
+    // function for when a user taps on the annotation text bubble
     func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
-        /*//tries to find the distance in meters between 2 coordinates
-        let from = CLLocation(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude)
-        let user_pos = mapView.userLocation?.coordinate
-        let to = CLLocation(latitude: user_pos!.latitude, longitude: user_pos!.longitude)
-        let _distance = from.distance(from: to)
-        */
-        //print(_distance)
-        
-        /*   //commenting this out because across distance maybe bugged
-        let camera = MGLMapCamera(lookingAtCenter: annotation.coordinate, acrossDistance: (_distance*2), pitch: 15, heading: 180)
-    mapView.fly(to: camera, withDuration: 4,
-    peakAltitude: 3000, completionHandler: nil)
-    */
-    
         let coordinate = annotation.coordinate
         
-        
-         
         if let origin = mapView.userLocation?.coordinate {
         // Calculate the route from the user's location to the set destination
         calculateRoute(from: origin, to: coordinate)
@@ -280,7 +283,17 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     }
     
     
+    
+    
     // MARK: - code that calculates the route and displays it
+    /*=========================================================================================
+     Title: Build a navigation app for iOS
+     Author: mapBox
+     Availability: https://docs.mapbox.com/help/tutorials/ios-navigation-sdk/
+ 
+    */
+    
+
     // Calculate route to be used for navigation
     func calculateRoute(from origin: CLLocationCoordinate2D, to destination: CLLocationCoordinate2D) {
         // Coordinate accuracy is how close the route must come to the waypoint in order to be considered viable. It is measured in meters. A negative value indicates that the route is viable regardless of how far the route is from the waypoint.
@@ -349,6 +362,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     self.present(navigationViewController, animated: true, completion: nil)
     }
     
+    //====================================== END OF COPIED/MODIED CODE  ===================================================
 
 
     
