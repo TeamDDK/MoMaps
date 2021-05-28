@@ -106,12 +106,19 @@ class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
+            let location = locations[indexPath.row]
+            let name = location["Name"] as! String
+            let description = location["Description"] as! String
+            let latitude = location["Latitude"] as! Double
+            let longitude = location["Longitude"] as! Double
+            
             let object = locations[indexPath.row] as! PFObject
             self.locations.remove(at: indexPath.row)
             self.tableView.deleteRows(at: [indexPath], with: .fade)
             print(object)
             object.deleteInBackground { (success, error) in
                         if (success) {
+                            self.plannedDelegate?.didDeletePlanned(_lat: latitude, _long: longitude, _name: name, _description: description)
                             self.tableView.reloadData()
                         } else {
                             let error = error?.localizedDescription as! String

@@ -27,6 +27,8 @@ extension UIViewController{
 }
 
 class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewControllerDelegate, PlannedViewControllerDelegate, AddViewControllerDelegate {
+
+    
     func didFinishAdding(_lat: Double, _long: Double, _name: String, _description: String) {
         createAnnotation(_lat: _lat, _long: _long, _name: _name, _description: _description)
     }
@@ -43,7 +45,12 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     }
     
     func didDeletePlanned(_lat: Double, _long: Double, _name: String, _description: String) {
-        print("i do nothing rn")
+        for annotation in mapView.annotations!{
+            if (annotation.title == _name){
+                mapView.deselectAnnotation(annotation, animated: false)
+                mapView.removeAnnotation(annotation)
+            }
+        }
     }
     
     
@@ -59,7 +66,12 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     }
     
     func didDeleteFavorite(_lat: Double, _long: Double, _name: String, _description: String) {
-        print("i do nothing rn")
+        for annotation in mapView.annotations!{
+            if (annotation.title == _name){
+                mapView.deselectAnnotation(annotation, animated: false)
+                mapView.removeAnnotation(annotation)
+            }
+        }
     }
     
     //map stuff
