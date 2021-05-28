@@ -30,10 +30,18 @@ extension UITableView {
     }
 }
 
+protocol PlannedViewControllerDelegate {
+    func didSelectPlanned(_lat: Double, _long: Double, _name: String, _description: String)
+    func didDeletePlanned(_lat: Double, _long: Double, _name: String, _description: String)
+}
+
 class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var plannedDelegate: PlannedViewControllerDelegate?
+    
     
     var locations = [PFObject]()
     
@@ -82,6 +90,19 @@ class PlannerViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let location = locations[indexPath.row]
+        let name = location["Name"] as! String
+        let description = location["Description"] as! String
+        let latitude = location["Latitude"] as! Double
+        let longitude = location["Longitude"] as! Double
+        
+        plannedDelegate?.didSelectPlanned(_lat: latitude, _long: longitude, _name: name, _description: description)
+        
+
+    }
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{

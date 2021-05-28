@@ -26,7 +26,22 @@ extension UIViewController{
     }
 }
 
-class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewControllerDelegate {
+class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewControllerDelegate, PlannedViewControllerDelegate {
+    func didSelectPlanned(_lat: Double, _long: Double, _name: String, _description: String) {
+        tabBarController?.selectedIndex = 0
+        for annotation in mapView.annotations!{
+            if (annotation.title == _name){
+                mapView.selectAnnotation(annotation, animated: true) {
+                    self.mapView.setCenter(annotation.coordinate, animated: true)
+                }
+            }
+        }
+    }
+    
+    func didDeletePlanned(_lat: Double, _long: Double, _name: String, _description: String) {
+        print("i do nothing rn")
+    }
+    
     
     func didSelectFavorite(_lat: Double, _long: Double, _name: String, _description: String) {
         tabBarController?.selectedIndex = 0
@@ -75,9 +90,15 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     
     override func viewDidLoad() {
         
-        let navigationViewController = tabBarController?.viewControllers![2] as! UINavigationController
-        let favViewController = navigationViewController.viewControllers[0] as! FavoritesViewController
+        //sets delegates for planned and favorites view controller
+        let favNavigationViewController = tabBarController?.viewControllers![2] as! UINavigationController
+        let favViewController = favNavigationViewController.viewControllers[0] as! FavoritesViewController
         favViewController.favoritesDelegate = self
+        
+        let plannavigationViewController = tabBarController?.viewControllers![1] as! UINavigationController
+        let planViewController = plannavigationViewController.viewControllers[0] as! PlannerViewController
+        planViewController.plannedDelegate = self
+        
         
         self.HideKeyboard()
         super.viewDidLoad()
