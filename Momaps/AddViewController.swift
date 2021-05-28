@@ -13,9 +13,14 @@ import MapboxCoreNavigation
 import MapboxNavigation
 import MapboxDirections
 
+protocol AddViewControllerDelegate {
+    func didFinishAdding(_lat: Double, _long: Double, _name: String, _description: String)
+}
+
 class AddViewController: UIViewController {
     var globalLong: Double = 0
     var globalLat: Double = 0
+    var addDelegate : AddViewControllerDelegate?
     
     private lazy var FaveboardManager: BLTNItemManager = {
         let item = BLTNPageItem(title: "Added to Favorites Tab!")
@@ -113,6 +118,7 @@ class AddViewController: UIViewController {
         
                     FaveLocations.saveInBackground { success, error in
                         if success{
+                            addDelegate?.didFinishAdding(_lat: globalLat, _long: globalLong, _name: nameTextField.text!, _description: descriptionTextField.text!)
                             self.FaveboardManager.showBulletin(above: self)
                             addressTextField.layer.borderColor = UIColor.white.cgColor
                                         nameTextField.text?.removeAll()
@@ -167,6 +173,7 @@ class AddViewController: UIViewController {
                         
                     PlanLocations.saveInBackground { success, error in
                         if success{
+                            addDelegate?.didFinishAdding(_lat: globalLat, _long: globalLong, _name: nameTextField.text!, _description: descriptionTextField.text!)
                             self.PlanboardManager.showBulletin(above: self)
                                         nameTextField.text?.removeAll()
                                         addressTextField.text?.removeAll()

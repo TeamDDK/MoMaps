@@ -26,7 +26,11 @@ extension UIViewController{
     }
 }
 
-class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewControllerDelegate, PlannedViewControllerDelegate {
+class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewControllerDelegate, PlannedViewControllerDelegate, AddViewControllerDelegate {
+    func didFinishAdding(_lat: Double, _long: Double, _name: String, _description: String) {
+        createAnnotation(_lat: _lat, _long: _long, _name: _name, _description: _description)
+    }
+    
     func didSelectPlanned(_lat: Double, _long: Double, _name: String, _description: String) {
         tabBarController?.selectedIndex = 0
         for annotation in mapView.annotations!{
@@ -90,16 +94,8 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
     
     override func viewDidLoad() {
         
-        //sets delegates for planned and favorites view controller
-        let favNavigationViewController = tabBarController?.viewControllers![2] as! UINavigationController
-        let favViewController = favNavigationViewController.viewControllers[0] as! FavoritesViewController
-        favViewController.favoritesDelegate = self
-        
-        let plannavigationViewController = tabBarController?.viewControllers![1] as! UINavigationController
-        let planViewController = plannavigationViewController.viewControllers[0] as! PlannerViewController
-        planViewController.plannedDelegate = self
-        
-        
+        setDelegates()
+
         self.HideKeyboard()
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
@@ -114,9 +110,6 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
         fillOutFaveLocations()
 
 
-
-
-        
         
         view.addSubview(viewContainerForCL)
         view.addSubview(viewContainerforLogout)
@@ -205,6 +198,22 @@ class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewCon
         for place in planLocations{
             createAnnotation(_lat: place["Latitude"] as! Double, _long: place["Longitude"] as! Double, _name: place["Name"] as! String, _description: place["Description"] as! String)
         }
+    }
+    
+    //sets delegates for planned and favorites view controller
+    func setDelegates(){
+        
+        let favNavigationViewController = tabBarController?.viewControllers![2] as! UINavigationController
+        let favViewController = favNavigationViewController.viewControllers[0] as! FavoritesViewController
+        favViewController.favoritesDelegate = self
+        
+        let plannavigationViewController = tabBarController?.viewControllers![1] as! UINavigationController
+        let planViewController = plannavigationViewController.viewControllers[0] as! PlannerViewController
+        planViewController.plannedDelegate = self
+        
+        let addnavigationViewController = tabBarController?.viewControllers![3] as! UINavigationController
+        let addViewController = addnavigationViewController.viewControllers[0] as! AddViewController
+        addViewController.addDelegate = self
     }
 
     
