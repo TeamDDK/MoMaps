@@ -26,7 +26,23 @@ extension UIViewController{
     }
 }
 
-class HomeViewController: UIViewController, MGLMapViewDelegate {
+class HomeViewController: UIViewController, MGLMapViewDelegate, FavoritesViewControllerDelegate {
+    
+    func didSelectFavorite(_lat: Double, _long: Double, _name: String, _description: String) {
+        tabBarController?.selectedIndex = 0
+        for annotation in mapView.annotations!{
+            if (annotation.title == _name){
+                mapView.selectAnnotation(annotation, animated: true) {
+                    self.mapView.setCenter(annotation.coordinate, animated: true)
+                }
+            }
+        }
+    }
+    
+    func didDeleteFavorite(_lat: Double, _long: Double, _name: String, _description: String) {
+        print("i do nothing rn")
+    }
+    
     //map stuff
     var mapView: NavigationMapView!
     var routeOptions: NavigationRouteOptions?
@@ -58,6 +74,10 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
     
     
     override func viewDidLoad() {
+        
+        let navigationViewController = tabBarController?.viewControllers![2] as! UINavigationController
+        let favViewController = navigationViewController.viewControllers[0] as! FavoritesViewController
+        favViewController.favoritesDelegate = self
         
         self.HideKeyboard()
         super.viewDidLoad()
@@ -123,7 +143,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
         query.findObjectsInBackground { locations, error in
             if locations != nil{
                 self.planLocations = locations!
-                print(locations)
+                //print(locations)
             }
             if error == nil{
                 self.placePlanLocations()
@@ -154,7 +174,7 @@ class HomeViewController: UIViewController, MGLMapViewDelegate {
     }
 
     func placeFaveLocations(){
-        print("count is \(faveLocations.count)")
+        //print("count is \(faveLocations.count)")
         for place in faveLocations{
             createAnnotation(_lat: place["Latitude"] as! Double, _long: place["Longitude"] as! Double, _name: place["Name"] as! String, _description: place["Description"] as! String)
         }

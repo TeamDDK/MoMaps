@@ -9,12 +9,19 @@ import UIKit
 import Parse
 import NotificationBannerSwift
 
+protocol FavoritesViewControllerDelegate {
+    func didSelectFavorite(_lat: Double, _long: Double, _name: String, _description: String)
+    func didDeleteFavorite(_lat: Double, _long: Double, _name: String, _description: String)
+}
+
 class FavoritesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     //location["latitude"]
     //locaton["longitude"]
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var favoritesDelegate: FavoritesViewControllerDelegate?
     
     var locations = [PFObject]()
 
@@ -60,6 +67,19 @@ class FavoritesViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.descriptionLabel.text = location["Description"] as! String
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let location = locations[indexPath.row]
+        let name = location["Name"] as! String
+        let description = location["Description"] as! String
+        let latitude = location["Latitude"] as! Double
+        let longitude = location["Longitude"] as! Double
+        
+        favoritesDelegate?.didSelectFavorite(_lat: latitude, _long: longitude, _name: name, _description: description)
+        
+
+        
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
